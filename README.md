@@ -8,7 +8,13 @@
 
 제가 만든 필터를 사용하는 방법은 다음과 같습니다.
 
-탐색기 → 문서 → My Games → Path of Exile 안에 아이템 필터 파일과 CustomSound폴더를 옮겨줍니다.
+먼저 릴리즈 페이즈로 이동해서 가장 상단의 최신 버전의   
+Source code (zip) 파일을 클릭해서 다운로드 한 뒤 압축을 풀어줍니다.   
+https://github.com/seominugi/seoMinugi-Filter/releases
+
+> 그러면 Path of Exile 폴더가 있는데 이 폴더안의 아이템 필터 파일과 CustomSound폴더를    
+> 탐색기 → 문서 → My Games → Path of Exile 폴더 안으로 옮겨줍니다.
+
 <hr/>
 
 현재 필터 버턴은 
