@@ -10,6 +10,7 @@
 # ================================================
 # 3.25 신규 아이템들 추후 가치에 맞게 위치 재조정
 # ================================================
+
 # 투영하는 안개?
 Show #default
     Class == "Stackable Currency"
@@ -23,13 +24,14 @@ Show #default
     MinimapIcon 0 Red Star
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
+# 룬
 Show #default
     Class == "Stackable Currency"
     BaseType == "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
     SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
+    SetTextColor 245 255 250 255 #F5FFFA
+    SetBorderColor 0 50 98 255 #003262
+    SetBackgroundColor 36 107 206 240 #246BCE
     PlayAlertSound 6 300
     PlayEffect Red
     MinimapIcon 0 Red Star
@@ -41,20 +43,29 @@ Show
     Class == "Gold"
     BaseType == "Gold"
     SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
+    SetTextColor 64 46 50 255 #402E32
+    SetBorderColor 64 46 50 255 #402E32
+    SetBackgroundColor 212 175 55 240 #D4AF37
     PlayEffect Yellow
     CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 Show
-    StackSize < 200
+    StackSize >= 100
     Class == "Gold"
     BaseType == "Gold"
     SetFontSize 40
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
+    SetTextColor 64 46 50 255 #402E32
+    SetBorderColor 64 46 50 255 #402E32
+    SetBackgroundColor 212 175 55 240 #D4AF37
+    PlayEffect Yellow Temp
+
+Show
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 35
+    SetTextColor 64 46 50 255 #402E32
+    SetBorderColor 64 46 50 255 #402E32
+    SetBackgroundColor 212 175 55 240 #D4AF37
     PlayEffect Yellow Temp
 
 # 3.25 신규 점술카드 5개
@@ -6554,6 +6565,7 @@ Show
 # ================================================
 # 3.25 신규 아이템들 추후 가치에 맞게 위치 재조정
 # ================================================
+
 # 투영하는 안개?
 Show #default
     Class == "Stackable Currency"
@@ -6567,13 +6579,14 @@ Show #default
     MinimapIcon 0 Red Star
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
+# 룬
 Show #default
     Class == "Stackable Currency"
     BaseType == "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
     SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
+    SetTextColor 245 255 250 255 #F5FFFA
+    SetBorderColor 0 50 98 255 #003262
+    SetBackgroundColor 36 107 206 240 #246BCE
     PlayAlertSound 6 300
     PlayEffect Red
     MinimapIcon 0 Red Star
@@ -6585,20 +6598,29 @@ Show
     Class == "Gold"
     BaseType == "Gold"
     SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
+    SetTextColor 64 46 50 255 #402E32
+    SetBorderColor 64 46 50 255 #402E32
+    SetBackgroundColor 212 175 55 240 #D4AF37
     PlayEffect Yellow
     CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 Show
-    StackSize < 200
+    StackSize >= 100
     Class == "Gold"
     BaseType == "Gold"
     SetFontSize 40
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
+    SetTextColor 64 46 50 255 #402E32
+    SetBorderColor 64 46 50 255 #402E32
+    SetBackgroundColor 212 175 55 240 #D4AF37
+    PlayEffect Yellow Temp
+
+Show
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 35
+    SetTextColor 64 46 50 255 #402E32
+    SetBorderColor 64 46 50 255 #402E32
+    SetBackgroundColor 212 175 55 240 #D4AF37
     PlayEffect Yellow Temp
 
 # 3.25 신규 점술카드 5개
