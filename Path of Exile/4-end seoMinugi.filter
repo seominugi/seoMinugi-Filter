@@ -6,34 +6,141 @@
 # 리그 정보에 영향을 받아 비싸지는 아이템은
 # 이곳에 정의합니다.
 
-# 고난 리그 스폐셜 아이템
-# 야누스 장막이 부여된 사자 가죽모(85레벨 이상)
-# Show
-# 	ItemLevel >= 85
-# 	# Class == "Helmets"
-# 	BaseType == "무거운 허리띠"
-# 	# HasExplicitMod "of Janus' Veil"
-# 	SetFontSize 45
-# 	SetTextColor 255 215 175 255 ##9AD1D4
-# 	SetBorderColor 255 215 175 255 ##9AD1D4
-# 	SetBackgroundColor 1 68 33 255 #014421
-# 	# PlayAlertSound 6 300
-# 	# PlayEffect Yellow
-# 	# MinimapIcon 0 Yellow Star
 
-# # 야누스 장막이 부여된 사자 가죽모(85레벨 이하)
-# Show
-# 	ItemLevel < 85
-# 	Class == "Helmets"
-# 	BaseType == "Lion Pelt"
-# 	HasExplicitMod "of Janus' Veil"
-# 	SetFontSize 45
-# 	SetTextColor 255 215 175 255 ##9AD1D4
-# 	SetBorderColor 255 215 175 255 ##9AD1D4
-# 	SetBackgroundColor 1 68 33 255 #014421
-# 	PlayAlertSound 6 300
-# 	PlayEffect Yellow
-# 	MinimapIcon 0 Yellow Star
+# ================================================
+# 3.25 신규 아이템들 추후 가치에 맞게 위치 재조정
+# ================================================
+# 투영하는 안개?
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
+    SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+    SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+
+# 3.25 신규 아이템 골드
+Show
+    StackSize >= 200
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+    PlayEffect Yellow
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+Show
+    StackSize < 200
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 40
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+    PlayEffect Yellow Temp
+
+# 3.25 신규 점술카드 5개
+Show #default
+    Class == "Divination Cards"
+    BaseType == "Father's Love" "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings"
+    SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+
+# 3.25 신규 상위 투구
+Show
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	# ItemLevel >= 85
+	Class == "Helmets"
+	BaseType == "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+	PlayAlertSound 2 300
+	PlayEffect Green
+	MinimapIcon 0 Green UpsideDownHouse
+
+# 3.25 신규 상위 장갑
+Show
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	# ItemLevel >= 85
+	Class == "Gloves"
+	BaseType == "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+	PlayAlertSound 2 300
+	PlayEffect Green
+	MinimapIcon 0 Green UpsideDownHouse
+
+# 3.25 신규 상위 장화
+Show
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	# ItemLevel >= 85
+	Class == "Boots"
+	BaseType == "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Green
+	MinimapIcon 0 Green UpsideDownHouse
+
+# 3.25 신규 상위 갑옷
+Show
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	# ItemLevel >= 85
+	Class == "Body Armours"
+	BaseType == "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Green
+	MinimapIcon 0 Green UpsideDownHouse
 
 # ================================================
 # 3.23 고난 신규 아이템
@@ -50,78 +157,80 @@ Show
     MinimapIcon 0 Green Kite
 
 # ================================================
-# 3.24 네크로폴리스 신규 아이템
+# 3.24 네크로폴리스 신규 아이템 모두 삭제됨
 # 빈 관, 채워진 관
 # 올플레임 잉걸불
 # ================================================
 
 # 네크로폴리스 채워진 관
-Show #default
-    Class == "Stackable Currency"
-    BaseType == "Filled Coffin"
-    SetFontSize 45
-    # SetTextColor 255 248 231 255 #FFF8E7
-    SetBorderColor 255 248 231 255 #FFF8E7
-    SetBackgroundColor 40 15 1 240 #280F01
+# Show #default
+#     Class == "Stackable Currency"
+#     BaseType == "Filled Coffin"
+#     SetFontSize 45
+#     # SetTextColor 255 248 231 255 #FFF8E7
+#     SetBorderColor 255 248 231 255 #FFF8E7
+#     SetBackgroundColor 40 15 1 240 #280F01
 
-# 네크로폴리스 빈 관
-Show #default
-    Class == "Stackable Currency"
-    BaseType == "Empty Coffin"
-    SetFontSize 45
-    # SetTextColor 255 248 231 255 #FFF8E7
-    SetBorderColor 255 248 231 255 #FFF8E7
-    # SetBackgroundColor 40 15 1 240 #280F01
+# # 네크로폴리스 빈 관
+# Show #default
+#     Class == "Stackable Currency"
+#     BaseType == "Empty Coffin"
+#     SetFontSize 45
+#     # SetTextColor 255 248 231 255 #FFF8E7
+#     SetBorderColor 255 248 231 255 #FFF8E7
+#     # SetBackgroundColor 40 15 1 240 #280F01
 
-# 올플레임 잉걸불 1티어
-Show
-    Class == "Embers of the Allflame"
-    BaseType == "Allflame Ember of Manifested Wealth" "Allflame Ember of The Shaper" "Flaring Allflame Ember of Kalguurans" "Allflame Ember of Meatsacks" "Flaring Allflame Ember of Scientists"
-    SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
-    PlayAlertSound 3 300
-    PlayEffect Purple
-    MinimapIcon 0 Purple Star
-    # CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+# # 올플레임 잉걸불 1티어
+# Show
+#     Class == "Embers of the Allflame"
+#     BaseType == "Allflame Ember of Manifested Wealth" "Allflame Ember of The Shaper" "Flaring Allflame Ember of Kalguurans" "Allflame Ember of Meatsacks" "Flaring Allflame Ember of Scientists"
+#     SetFontSize 45
+#     SetTextColor 43 4 52 255 #2B0434
+#     SetBorderColor 43 4 52 255 #2B0434
+#     SetBackgroundColor 200 178 205 240 #C8B2CD
+#     PlayAlertSound 3 300
+#     PlayEffect Purple
+#     MinimapIcon 0 Purple Star
+#     # CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
-# 올플레임 잉걸불 2티어
-Show
-    Class == "Embers of the Allflame"
-    BaseType == "Flaring Allflame Ember of The First Ones" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Syndicate Guards" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Ramako"
-    SetFontSize 45
-    SetTextColor 255 232 255 255 #FFE8FF
-    SetBorderColor 255 232 255 255 #FFE8FF
-    SetBackgroundColor 86 60 92 240 #563C5C
-    PlayAlertSound 3 300
-    PlayEffect Purple
-    MinimapIcon 1 Purple Cross
-    # CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+# # 올플레임 잉걸불 2티어
+# Show
+#     Class == "Embers of the Allflame"
+#     BaseType == "Flaring Allflame Ember of The First Ones" "Allflame Ember of Syndicate Assassins" "Allflame Ember of Syndicate Escorts" "Allflame Ember of Syndicate Guards" "Allflame Ember of Syndicate Researchers" "Allflame Ember of Ramako"
+#     SetFontSize 45
+#     SetTextColor 255 232 255 255 #FFE8FF
+#     SetBorderColor 255 232 255 255 #FFE8FF
+#     SetBackgroundColor 86 60 92 240 #563C5C
+#     PlayAlertSound 3 300
+#     PlayEffect Purple
+#     MinimapIcon 1 Purple Cross
+#     # CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
-# 올플레임 잉걸불 3 티어
-Show
-    Class == "Embers of the Allflame"
-    BaseType == "Allflame Ember of Rats" "Allflame Ember of Frogs" "Allflame Ember of Untainted Apes" "Flaring Allflame Ember of Breachlords" "Flaring Allflame Ember of the Vaal" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Beasts" "Allflame Ember of Anarchy" "Allflame Ember of The Elder" "Allflame Ember of Untainted Devourers" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters"
-    SetFontSize 45
-    SetTextColor 255 232 255 255 #FFE8FF
-    SetBorderColor 255 232 255 255 #FFE8FF
-    SetBackgroundColor 86 60 92 240 #563C5C
-    PlayAlertSound 3 300
-    PlayEffect Purple Temp
-    MinimapIcon 2 Purple Cross
+# # 올플레임 잉걸불 3 티어
+# Show
+#     Class == "Embers of the Allflame"
+#     BaseType == "Allflame Ember of Rats" "Allflame Ember of Frogs" "Allflame Ember of Untainted Apes" "Flaring Allflame Ember of Breachlords" "Flaring Allflame Ember of the Vaal" "Flaring Allflame Ember of Wildwood Cultists" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Beasts" "Allflame Ember of Anarchy" "Allflame Ember of The Elder" "Allflame Ember of Untainted Devourers" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters"
+#     SetFontSize 45
+#     SetTextColor 255 232 255 255 #FFE8FF
+#     SetBorderColor 255 232 255 255 #FFE8FF
+#     SetBackgroundColor 86 60 92 240 #563C5C
+#     PlayAlertSound 3 300
+#     PlayEffect Purple Temp
+#     MinimapIcon 2 Purple Cross
 
-# 그 외 올플레임 잉걸불 
-Show
-    Class == "Embers of the Allflame"
-    SetFontSize 45
-    SetTextColor 247 244 247 255 #F7F4F7
-    SetBorderColor 247 244 247 255 #F7F4F7
-    SetBackgroundColor 86 60 92 240 #563C5C
-    PlayAlertSound 3 300
-    PlayEffect Purple Temp
-    MinimapIcon 2 Purple Circle
+# # 그 외 올플레임 잉걸불 
+# Show
+#     Class == "Embers of the Allflame"
+#     SetFontSize 45
+#     SetTextColor 247 244 247 255 #F7F4F7
+#     SetBorderColor 247 244 247 255 #F7F4F7
+#     SetBackgroundColor 86 60 92 240 #563C5C
+#     PlayAlertSound 3 300
+#     PlayEffect Purple Temp
+#     MinimapIcon 2 Purple Circle
     
+
+
 
 # ================================================
 # 섬뜩한 화폐
@@ -367,7 +476,7 @@ Show #default
     PlayAlertSound 6 300
     PlayEffect Red
     MinimapIcon 0 Red Star
-    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+    CustomAlertSoundOptional "./CustomSound/divine1.wav" 300
 
 # 거울 파편, 발도의 퍼즐 상자
 Show #default
@@ -380,7 +489,7 @@ Show #default
     PlayAlertSound 6 300
     PlayEffect Red
     MinimapIcon 0 Red Star
-    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+    CustomAlertSoundOptional "./CustomSound/divine1.wav" 300
 
 # 디바인 오브(신성한 오브)
 Show #default
@@ -406,7 +515,7 @@ Show #default
     PlayAlertSound 6 300
     PlayEffect Red
     MinimapIcon 0 Red Star
-    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+    CustomAlertSoundOptional "./CustomSound/divine1.wav" 300
 
 # 분열의 오브, 분열의 파편
 Show #default
@@ -2788,6 +2897,7 @@ Hide #mid
 # ================================================
 
 # 반지(자수정, 분광, 무보석, 오팔, 강철, 주색, 진청색, 근청석)
+# 3.25 신규 반지 Nameless Ring
 Show #end
 	HasInfluence None
 	Identified False
@@ -2795,7 +2905,7 @@ Show #end
 	Corrupted False
 	ItemLevel >= 85
 	Class "Rings"
-	BaseType == "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring"
+	BaseType == "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring" "Nameless Ring"
 	Rarity == Rare
 	SetFontSize 45
     SetTextColor 82 57 96 255 #523960
@@ -2812,7 +2922,7 @@ Hide #mid
 	Corrupted False
 	ItemLevel >= 68
 	Class "Rings"
-	BaseType == "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring"
+	BaseType == "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring" "Nameless Ring"
 	Rarity == Rare
 	SetFontSize 45
     SetTextColor 82 57 96 255 #523960
@@ -4296,7 +4406,7 @@ Show #default
 
 Show
     Class == "Map Fragments"
-    BaseType == "Divination Scarab of Completion" "Horned Scarab of Bloodlines" "Horned Scarab of Preservation" "Reliquary Scarab of Vision" "Bestiary Scarab of the Shadowed Crow" "Divination Scarab of Curation" "Horned Scarab of Awakening"
+    BaseType == "Divination Scarab of Pilfering" "Horned Scarab of Bloodlines" "Horned Scarab of Preservation" "Titanic Scarab of Legend" "Bestiary Scarab of the Shadowed Crow" "Divination Scarab of Plenty" "Horned Scarab of Awakening"
     SetFontSize 45
     SetTextColor 85 17 38 255 #551126
     SetBorderColor 85 17 38 255 #551126
@@ -4319,7 +4429,7 @@ Show
 # 예언자, 성유물, 매복, 선구자 갑충석
 Show 
     Class == "Map Fragments"
-    BaseType == "Divination Scarab" "Reliquary Scarab" "Reliquary Scarab of Overlords" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab" "Harbinger Scarab of Discernment" "Harbinger Scarab of Regency" "Harbinger Scarab of Warhoards"
+    BaseType == "Divination Scarab of The Cloister" "Titanic Scarab" "Titanic Scarab of Treasures" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab" "Harbinger Scarab of Obelisks" "Harbinger Scarab of Regency" "Harbinger Scarab of Warhoards"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
@@ -4330,7 +4440,7 @@ Show
 # 군단, 탐험, 에센스, 수확, 역병, 심연
 Show 
     Class == "Map Fragments"
-    BaseType "Legion Scarab" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Legion Scarab of Eternal Conflict" "Expedition Scarab" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Expedition Scarab of Archaeology" "Essence Scarab" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Essence Scarab of Calcification" "Harvest Scarab" "Harvest Scarab of Doubling" "Harvest Scarab of Cornucopia" "Blight Scarab" "Blight Scarab of Bounty" "Blight Scarab of Oils" "Blight Scarab of Blooming" "Abyss Scarab" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness"
+    BaseType "Legion Scarab" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Legion Scarab of Eternal Conflict" "Expedition Scarab" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Expedition Scarab of Archaeology" "Essence Scarab" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Essence Scarab of Calcification" "Harvest Scarab" "Harvest Scarab of Doubling" "Harvest Scarab of Cornucopia" "Blight Scarab" "Blight Scarab of Bounty" "Blight Scarab of the Blightheart" "Blight Scarab of Blooming" "Abyss Scarab" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Scarab of Divinity"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
@@ -4339,10 +4449,10 @@ Show
     MinimapIcon 1 Green Circle
 
 
-# 균열, 결전, 환영, 의식, 지도 제작자
+# 균열, 결전, 환영, 의식, 지도 제작자, 지배
 Show 
     Class == "Map Fragments"
-    BaseType "Breach Scarab" "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Breach Scarab of Snares" "Ultimatum Scarab" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Delirium Scarab" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Cartography Scarab" "Cartography Scarab of Ascension" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Cartography Scarab of Duplication"
+    BaseType "Breach Scarab" "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Breach Scarab of Snares" "Ultimatum Scarab" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Delirium Scarab" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Cartography Scarab of Escalation" "Cartography Scarab of Risk" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Cartography Scarab of the Multitude" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Wisps" 
     SetFontSize 45
     SetTextColor 255 248 231 255 #FFF8E7
     SetBorderColor 255 248 231 255 #FFF8E7
@@ -4375,6 +4485,19 @@ Show
     MinimapIcon 1 Purple Star
     PlayEffect Purple
     PlayAlertSound 2 300
+
+# 3.25 신규 지도 조각 (연무왕)
+Show 
+    Class == "Map Fragments"
+    BaseType == "An Audience With The King"
+    SetFontSize 45
+    SetTextColor 255 250 222 255 #FFFADE
+    SetBorderColor 255 250 222 255 #FFFADE
+    SetBackgroundColor 48 25 52 240 #301934
+    MinimapIcon 1 Purple Star
+    PlayEffect Purple
+    PlayAlertSound 2 300
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
 # Fragment of the Phoenix 불사조의 지도 조각
 # Fragment of the Minotaur 미노타우로스의 지도 조각
@@ -5089,20 +5212,20 @@ Hide #early
     SetFontSize 45
 
 # ================================================
-# 성유 추출기
+# 성유 추출기(3.25에서 삭제됨)
 # ================================================
 
 # Oil Extractor 성유 추출기
-Show
-	Class == "Stackable Currency"
-	BaseType == "Oil Extractor"
-	SetFontSize 45
-	SetTextColor 250 218 94 255 #FADA5E
-	SetBorderColor 250 218 94 255 #FADA5E
-	SetBackgroundColor 1 11 19 240 #010B13
-	PlayAlertSound 2 300
-    MinimapIcon 1 White Circle
-	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+# Show
+# 	Class == "Stackable Currency"
+# 	BaseType == "Oil Extractor"
+# 	SetFontSize 45
+# 	SetTextColor 250 218 94 255 #FADA5E
+# 	SetBorderColor 250 218 94 255 #FADA5E
+# 	SetBackgroundColor 1 11 19 240 #010B13
+# 	PlayAlertSound 2 300
+#     MinimapIcon 1 White Circle
+# 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 # ================================================
 # 성유 필터
@@ -5110,7 +5233,7 @@ Show
 # 성유 등급은 아래처럼 처리하였습니다.
 # 더럽혀진 성유는 리그에 따라 시세 변동이 큰 편입니다.
 # 
-# 티어0 더럽혀진 
+# 티어0 더럽혀진, 분광
 # 티어1 금빛
 # 티어2 은빛
 # 티어3 오팔빛
@@ -5119,10 +5242,10 @@ Show
 # 티어6 투명 적갈 호박 신록
 # ================================================
 
-# 더럽혀진(리그에 따라 시세 변동이 크다.)
+# 더럽혀진, 분광 (리그에 따라 시세 변동이 크다.)
 Show #default
 	Class == "Stackable Currency"
-	BaseType == "Tainted Oil"
+	BaseType == "Tainted Oil" "Prismatic Oil"
 	SetFontSize 45
 	SetTextColor 94 222 118 255 #5EDE76
 	SetBorderColor 94 222 118 255 #5EDE76
@@ -5446,10 +5569,11 @@ Show #highEnd
 	MinimapIcon 1 Green Cross
     CustomAlertSoundOptional "./CustomSound/diablo-classic-gold-drop-sound-with-item-drop-sound.wav" 300
 
+# 3.25에서 Perfect Fossil완벽한 화석이 "Opulent Fossil"로 변경
 # 고난 리그 기준 약 25c 이상
 Show #highEnd
 	Class == "Stackable Currency"
-	BaseType == "Glyphic Fossil" "Fractured Fossil" "Perfect Fossil" "Shuddering Fossil"
+	BaseType == "Glyphic Fossil" "Fractured Fossil" "Opulent Fossil" "Shuddering Fossil"
 	SetFontSize 45
 	SetTextColor 208 240 192 255
 	SetBorderColor 208 240 192 255
