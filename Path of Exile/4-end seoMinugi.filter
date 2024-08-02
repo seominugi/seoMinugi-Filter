@@ -11,10 +11,10 @@
 # 3.25 신규 아이템들 추후 가치에 맞게 위치 재조정
 # ================================================
 
-# 투영하는 안개?
+# 투영하는 안개
 Show #default
     Class == "Stackable Currency"
-    BaseType == "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
+    BaseType == "Reflecting Mist"
     SetFontSize 45
     SetTextColor 43 4 52 255 #2B0434
     SetBorderColor 43 4 52 255 #2B0434
@@ -23,6 +23,31 @@ Show #default
     PlayEffect Red
     MinimapIcon 0 Red Star
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+
+# 메이븐 끌 티어1
+Show
+    Class == "Stackable Currency"
+    BaseType == "Maven's Chisel of Proliferation" "Maven's Chisel of Scarabs"
+    SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+    PlayAlertSound 6 300
+    PlayEffect Purple
+    MinimapIcon 1 Purple Cross
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+# 메이븐 끌 티어2
+Show
+    Class == "Stackable Currency"
+    BaseType == "Maven's Chisel of Procurement"  "Maven's Chisel of Divination"  "Maven's Chisel of Avarice"
+    SetFontSize 45
+    SetTextColor 255 232 255 255 #FFE8FF
+    SetBorderColor 255 232 255 255 #FFE8FF
+    SetBackgroundColor 86 60 92 240 #563C5C
+    PlayAlertSound 3 300
+    PlayEffect Purple
+    MinimapIcon 2 Purple Cross
 
 # 룬
 Show #default
@@ -37,37 +62,6 @@ Show #default
     MinimapIcon 0 Red Star
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
-# 3.25 신규 아이템 골드
-Show
-    StackSize >= 200
-    Class == "Gold"
-    BaseType == "Gold"
-    SetFontSize 45
-    SetTextColor 64 46 50 255 #402E32
-    SetBorderColor 64 46 50 255 #402E32
-    SetBackgroundColor 212 175 55 240 #D4AF37
-    PlayEffect Yellow
-    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
-
-Show
-    StackSize >= 100
-    Class == "Gold"
-    BaseType == "Gold"
-    SetFontSize 40
-    SetTextColor 64 46 50 255 #402E32
-    SetBorderColor 64 46 50 255 #402E32
-    SetBackgroundColor 212 175 55 240 #D4AF37
-    PlayEffect Yellow Temp
-
-Show
-    Class == "Gold"
-    BaseType == "Gold"
-    SetFontSize 35
-    SetTextColor 64 46 50 255 #402E32
-    SetBorderColor 64 46 50 255 #402E32
-    SetBackgroundColor 212 175 55 240 #D4AF37
-    PlayEffect Yellow Temp
-
 # 3.25 신규 점술카드 5개
 Show #default
     Class == "Divination Cards"
@@ -81,84 +75,45 @@ Show #default
     MinimapIcon 0 Red Star
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
-# 3.25 신규 상위 투구
+# ================================================
+# 3.25 신규 아이템 골드
+# ================================================
 Show
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	# ItemLevel >= 85
-	Class == "Helmets"
-	BaseType == "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse
+    StackSize >= 200
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 33
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
-# 3.25 신규 상위 장갑
 Show
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	# ItemLevel >= 85
-	Class == "Gloves"
-	BaseType == "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 43 4 52 255 #2B0434
-    SetBorderColor 43 4 52 255 #2B0434
-    SetBackgroundColor 200 178 205 240 #C8B2CD
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse
+    StackSize >= 100
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 30
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow Temp
 
-# 3.25 신규 상위 장화
 Show
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	# ItemLevel >= 85
-	Class == "Boots"
-	BaseType == "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 82 57 96 255 #523960
-    SetBorderColor 82 57 96 255 #523960
-    SetBackgroundColor 203 206 144 240 #CBCE90
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse
-
-# 3.25 신규 상위 갑옷
-Show
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	# ItemLevel >= 85
-	Class == "Body Armours"
-	BaseType == "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 82 57 96 255 #523960
-    SetBorderColor 82 57 96 255 #523960
-    SetBackgroundColor 203 206 144 240 #CBCE90
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 27
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow Temp
 
 # ================================================
 # 3.23 고난 신규 아이템
-# 고난 팅크, 부적, 시체
+# 고난 팅크, 부적, 시신
 # ================================================
 Show
-    Class == "Tinctures" "Charms" "Corpses"
+    Class == "Charms"
     SetFontSize 45
     SetTextColor 2 42 12 255 #022A0C
     SetBorderColor 2 42 12 255 #022A0C
@@ -166,6 +121,47 @@ Show
     PlayAlertSound 3 300
     PlayEffect Green
     MinimapIcon 0 Green Kite
+
+# 가격 체크 후 비싼 것 재조정 필요
+Show
+    Class == "Tinctures"
+    SetFontSize 45
+    SetTextColor 2 42 12 255 #022A0C
+    SetBorderColor 2 42 12 255 #022A0C
+    SetBackgroundColor 62 160 85 240 #3EA055
+    PlayAlertSound 3 300
+    PlayEffect Green Temp
+
+# 고난 시신은 3종류로 나뉨
+Show
+    Class == "Corpses"
+    BaseType "Perfect"
+    SetFontSize 45
+    SetTextColor 2 42 12 255 #022A0C
+    SetBorderColor 2 42 12 255 #022A0C
+    SetBackgroundColor 62 160 85 240 #3EA055
+    PlayAlertSound 3 300
+    PlayEffect Green
+    MinimapIcon 0 Green Circle
+
+Hide
+    Class == "Corpses"
+    BaseType "Imperfect"
+    SetFontSize 45
+    SetTextColor 2 42 12 255 #022A0C
+    SetBorderColor 2 42 12 255 #022A0C
+    SetBackgroundColor 62 160 85 240 #3EA055
+    PlayAlertSound 3 300
+    PlayEffect Green
+
+Show
+    Class == "Corpses"
+    SetFontSize 45
+    SetTextColor 2 42 12 255 #022A0C
+    SetBorderColor 2 42 12 255 #022A0C
+    SetBackgroundColor 62 160 85 240 #3EA055
+    PlayAlertSound 3 300
+    PlayEffect Green Temp
 
 # ================================================
 # 3.24 네크로폴리스 신규 아이템 모두 삭제됨
@@ -456,13 +452,14 @@ Show
 # Orb of Dominance 지배의 오브
 # ================================================
 
+# 메이븐, 정복자 오브
 Show
     Class == "Stackable Currency"
     BaseType == "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Orb of Conflict" "Orb of Dominance"
     SetFontSize 45
-    SetTextColor 249 87 0 255
-    SetBorderColor 249 87 0 255
-    SetBackgroundColor 255 247 247 204
+    SetTextColor 255 240 245 255 #FFF0F5
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 102 2 60 240 #66023C
     PlayAlertSound 6 300
     PlayEffect Yellow
     MinimapIcon 0 Yellow Star
@@ -1754,7 +1751,7 @@ Hide #default
 	MinimapIcon 1 Blue Diamond
 
 #그 외 분열 아이템(미확인)
-Hide #default
+Show #default
 	Identified False
 	FracturedItem True
 	Rarity Magic Rare
@@ -2175,16 +2172,18 @@ Show #네크로폴리스 빙의 속성
 
 # 네크로폴리스에서 제작되는 아이템 보여주기.
 # 매장지의 지역 레벨은 1이다.
+# 킹스마치의 지역 레벨은 1이다.
 Show #default
 	AreaLevel == 1 
 	Identified True
+	Rarity != Unique
 	SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 167 136 0 240 #A78800
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 1 Yellow UpsideDownHouse
+	MinimapIcon 2 Yellow UpsideDownHouse
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 # 식별된 아이템 중 필요 없는 아이템 숨기기
@@ -2246,80 +2245,6 @@ Hide #starter
     SetBackgroundColor 159 193 49 240 #9FC131
 
 # ================================================
-# 주문 피해 억제 확률이 부여될 수 있는 베이스 아이템, 주피억 방어구)
-# ================================================
-
-# 방어구(아룡, 히드라, 용 비늘)
-Show #end
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 85
-	Class "Gloves" "Helmets" "Boots" "Body Armours"
-	BaseType == "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 82 57 96 255 #523960
-    SetBorderColor 82 57 96 255 #523960
-    SetBackgroundColor 203 206 144 240 #CBCE90
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse #end
-
-Hide #mid
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 68
-	Class "Gloves" "Helmets" "Boots" "Body Armours"
-	BaseType == "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 82 57 96 255 #523960
-    SetBorderColor 82 57 96 255 #523960
-    SetBackgroundColor 203 206 144 240 #CBCE90
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse #mid
-
-# 방패(최상급 가시, 거울 같은 가시, 고상한 원형, 선홍색 원형)
-Show #end
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 85
-	Class "Shields"
-	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Elegant Round Shield" "Cardinal Round Shield"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 82 57 96 255 #523960
-    SetBorderColor 82 57 96 255 #523960
-    SetBackgroundColor 203 206 144 240 #CBCE90
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse #end
-
-Hide #mid
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 68
-	Class "Shields"
-	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Elegant Round Shield" "Cardinal Round Shield"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 82 57 96 255 #523960
-    SetBorderColor 82 57 96 255 #523960
-    SetBackgroundColor 203 206 144 240 #CBCE90
-	PlayAlertSound 2 300
-	PlayEffect Green
-	MinimapIcon 0 Green UpsideDownHouse #mid
-
-# ================================================
 # 희귀 아이템 무기
 # ================================================
 
@@ -2338,8 +2263,8 @@ Show #end
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2355,8 +2280,8 @@ Hide #mid
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # 화살통(무거운, 끔찍한, 원시, 포대, 넓은 촉, 쌍촉, 깃)
 Show #end
@@ -2373,8 +2298,8 @@ Show #end
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2390,8 +2315,8 @@ Hide #mid
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # 클로(제국, 쌍생아, 눈 후비개)
 Show #end
@@ -2408,8 +2333,8 @@ Show #end
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2425,8 +2350,8 @@ Hide #mid
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 양손 도끼(절대군주, 에조미어, 작렬하는, 바알, 살점 거열기, 공허의)
@@ -2446,8 +2371,8 @@ Show #end
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2463,8 +2388,8 @@ Hide #mid
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 양손 검(에조미어, 정교한)
@@ -2483,8 +2408,8 @@ Show #end
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2500,8 +2425,8 @@ Hide #mid
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 양손 철퇴(고기 갈이개, 제국 대형, 공포의 대형, 광환의 대형) 
@@ -2520,8 +2445,8 @@ Show #end
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2537,8 +2462,8 @@ Hide #mid
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 전쟁 지팡이(에조미어, 마엘스트롬, 심판)
@@ -2558,8 +2483,8 @@ Show #end
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2575,8 +2500,8 @@ Hide #mid
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # 마법봉(부여된, 부정한, 예언, 회오리, 오팔, 악마의 뿔)
 Show #end
@@ -2593,8 +2518,8 @@ Show #end
     SetBorderColor 169 221 253 255 #A9DDFD
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2610,8 +2535,8 @@ Hide #mid
     SetBorderColor 169 221 253 255 #A9DDFD
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # 룬 단검(백금 크리스, 황금 크리스, 악마 단검, 마귀 단검, 임프 단검)
 Show #end
@@ -2628,8 +2553,8 @@ Show #end
     SetBorderColor 169 221 253 255 #A9DDFD
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2645,8 +2570,8 @@ Hide #mid
     SetBorderColor 169 221 253 255 #A9DDFD
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # 셉터(삼바, 공허의, 육욕의, 바알, 오팔)
 Show #end
@@ -2663,8 +2588,8 @@ Show #end
     SetBorderColor 169 221 253 255 #A9DDFD
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2680,20 +2605,147 @@ Hide #mid
     SetBorderColor 169 221 253 255 #A9DDFD
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+# ================================================
+# 주문 피해 억제 확률이 부여될 수 있는 베이스 아이템, 주피억 방어구)
+# ================================================
+
+# 힘,민첩(Str/Dex) 상위 방어구
+Show #end
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 83
+	Class "Gloves" "Helmets" "Boots" "Body Armours"
+	BaseType == "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Boots" "Wyvernscale Boots" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Knight Helm" "Conquest Helmet" "Haunted Bascinet"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
+
+# 힘,민첩(Str/Dex) 방어구
+Hide #mid
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 73
+	Class "Gloves" "Helmets" "Boots" "Body Armours"
+	BaseType == "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Boots" "Wyvernscale Boots" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Knight Helm" "Conquest Helmet" "Haunted Bascinet"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+Hide #early
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel <= 72
+	Class "Gloves" "Helmets" "Boots" "Body Armours"
+	BaseType == "Wyrmscale Gauntlets" "Hydrascale Gauntlets" "Dragonscale Gauntlets" "Fluted Bascinet" "Pig-Faced Bascinet" "Nightmare Bascinet" "Wyrmscale Boots" "Hydrascale Boots" "Dragonscale Boots" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #early
+
+# 방패(최상급 가시, 거울 같은 가시, 고상한 원형, 선홍색 원형)
+Show #end
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 85
+	Class "Shields"
+	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Elegant Round Shield" "Cardinal Round Shield"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 0 Yellow UpsideDownHouse #end
+
+Hide #mid
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 68
+	Class "Shields"
+	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Elegant Round Shield" "Cardinal Round Shield"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 82 57 96 255 #523960
+    SetBorderColor 82 57 96 255 #523960
+    SetBackgroundColor 203 206 144 240 #CBCE90
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 0 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 희귀 아이템 방어구
 # ================================================
 
-# 방어도 상위 방어구
+# 힘(Str) 상위 방어구
 Show #end
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 85
+	ItemLevel >= 83
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Precursor Gauntlets" "Leviathan Gauntlets" "Precursor Greaves" "Leviathan Greaves" "Titan Plate" "Legion Plate" "Royal Plate" "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 243 238 217 255 #F3EED9
+    SetBorderColor 243 238 217 255 #F3EED9
+    SetBackgroundColor 128 24 24 240 #801818
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
+
+# 힘(Str) 방어구
+Hide #mid
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 73
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Royal Burgonet" "Eternal Burgonet" "Titan Gauntlets" "Vaal Gauntlets" "Titan Greaves" "Vaal Greaves" "Glorious Plate" "Gladiator Plate" "Gladiator Plate" "Astral Plate" "Precursor Gauntlets" "Leviathan Gauntlets" "Precursor Greaves" "Leviathan Greaves" "Titan Plate" "Legion Plate" "Royal Plate" "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 243 238 217 255 #F3EED9
+    SetBorderColor 243 238 217 255 #F3EED9
+    SetBackgroundColor 128 24 24 240 #801818
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+Hide #early
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel <= 72
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	BaseType == "Royal Burgonet" "Eternal Burgonet" "Titan Gauntlets" "Vaal Gauntlets" "Titan Greaves" "Vaal Greaves" "Glorious Plate" "Gladiator Plate" "Gladiator Plate" "Astral Plate"
 	Rarity == Rare
@@ -2702,36 +2754,51 @@ Show #end
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #early
 
-Hide #mid
+# 힘, 지능(Str/Int) 상위 방어구
+Show #end
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 68
+	ItemLevel >= 83
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
-	BaseType == "Royal Burgonet" "Eternal Burgonet" "Titan Gauntlets" "Vaal Gauntlets" "Titan Greaves" "Vaal Greaves" "Glorious Plate" "Gladiator Plate" "Gladiator Plate" "Astral Plate"
+	BaseType == "Martyr Gloves" "Paladin Gloves" "Martyr Boots" "Paladin Boots" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Faithful Helmet" "Paladin Crown" "Divine Crown"
 	Rarity == Rare
 	SetFontSize 45
     SetTextColor 243 238 217 255 #F3EED9
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
-# 방어도 에너지 보호막 상위 방어구
-# 재판관, 예언자, 집정관 왕관
-# 병사, 군단, 십자군 장갑, 장화
-# 고상한 고리, 성인의 쇠사슬, 성인의 사슬 갑옷
-Show #end
+# 힘, 지능(Str/Int) 방어구
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 85
+	ItemLevel >= 73
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Soldier Gloves" "Legion Gloves" "Crusader Gloves" "Soldier Boots" "Legion Boots" "Crusader Boots" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Martyr Gloves" "Paladin Gloves" "Martyr Boots" "Paladin Boots" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Faithful Helmet" "Paladin Crown" "Divine Crown"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 243 238 217 255 #F3EED9
+    SetBorderColor 243 238 217 255 #F3EED9
+    SetBackgroundColor 128 24 24 240 #801818
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+Hide #early
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel <= 72
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	BaseType == "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Soldier Gloves" "Legion Gloves" "Crusader Gloves" "Soldier Boots" "Legion Boots" "Crusader Boots" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"
 	Rarity == Rare
@@ -2740,33 +2807,51 @@ Show #end
     SetBorderColor 243 238 217 255 #F3EED9
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #early
 
-Hide #mid
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 68
-	Class "Helmets" "Gloves" "Boots" "Body Armours"
-	BaseType == "Magistrate Crown" "Prophet Crown" "Praetor Crown" "Soldier Gloves" "Legion Gloves" "Crusader Gloves" "Soldier Boots" "Legion Boots" "Crusader Boots" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 243 238 217 255 #F3EED9
-    SetBorderColor 243 238 217 255 #F3EED9
-    SetBackgroundColor 128 24 24 240 #801818
-	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
-
-# 회피 상위 방어구
+# 민첩(Dex) 상위 방어구
 Show #end
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 85
+	ItemLevel >= 83
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Harpyskin Gloves" "Velour Gloves" "Harpyskin Boots" "Velour Boots" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 147 235 206 255 #93EBCE
+    SetBorderColor 147 235 206 255 #93EBCE
+    SetBackgroundColor 0 66 37 240 #004225
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
+
+# 민첩(Dex) 방어구
+Hide #mid
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel >= 73
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Lion Pelt" "Sinner Tricorne" "Slink Gloves" "Stealth Gloves" "Slink Boots" "Stealth Boots" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather" "Harpyskin Gloves" "Velour Gloves" "Harpyskin Boots" "Velour Boots" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 147 235 206 255 #93EBCE
+    SetBorderColor 147 235 206 255 #93EBCE
+    SetBackgroundColor 0 66 37 240 #004225
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+Hide #early
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel <= 72
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	BaseType == "Lion Pelt" "Sinner Tricorne" "Slink Gloves" "Stealth Gloves" "Slink Boots" "Stealth Boots" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
 	Rarity == Rare
@@ -2775,17 +2860,18 @@ Show #end
     SetBorderColor 147 235 206 255 #93EBCE
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	PlayEffect Yellow Temp
+	# MinimapIcon 1 Yellow UpsideDownHouse #early
 
-Hide #mid
+# 민첩, 지능(Dex/Int) 상위 방어구
+Show #end
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 68
+	ItemLevel >= 83
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
-	BaseType == "Lion Pelt" "Sinner Tricorne" "Slink Gloves" "Stealth Gloves" "Slink Boots" "Stealth Boots" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
+	BaseType == "Infiltrator Mitts" "Phantom Mitts" "Infiltrator Boots" "Phantom Boots" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Jester Mask" "Ancient Mask" "Torturer's Mask"
 	Rarity == Rare
 	SetFontSize 45
     SetTextColor 147 235 206 255 #93EBCE
@@ -2793,18 +2879,32 @@ Hide #mid
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
-# 회피 에너지 보호막 상위 방어구
-# 할리퀸 가면, 바알 가면, 신살자 가면(투구)
-# 육욕, 암살자, 살인자 (장갑 장화)
-# 피의 의복, 가학자 의복, 육욕의 갑옷
-Show #end
+# 민첩, 지능(Dex/Int) 방어구
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 85
+	ItemLevel >= 73
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Carnal Mitts" "Assassin's Mitts" "Murder Mitts" "Carnal Boots" "Assassin's Boots" "Murder Boots" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Infiltrator Mitts" "Phantom Mitts" "Infiltrator Boots" "Phantom Boots" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour" "Jester Mask" "Ancient Mask" "Torturer's Mask"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 147 235 206 255 #93EBCE
+    SetBorderColor 147 235 206 255 #93EBCE
+    SetBackgroundColor 0 66 37 240 #004225
+	PlayAlertSound 2 300
+	PlayEffect Yellow 
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+Hide #early
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel <= 72
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	BaseType == "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Carnal Mitts" "Assassin's Mitts" "Murder Mitts" "Carnal Boots" "Assassin's Boots" "Murder Boots" "Blood Raiment" "Sadist Garb" "Carnal Armour"
 	Rarity == Rare
@@ -2814,34 +2914,17 @@ Show #end
     SetBackgroundColor 0 66 37 240 #004225
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	# MinimapIcon 1 Yellow UpsideDownHouse #early
 
-Hide #mid
-	HasInfluence None
-	Identified False
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 68
-	Class "Helmets" "Gloves" "Boots" "Body Armours"
-	BaseType == "Harlequin Mask" "Vaal Mask" "Deicide Mask" "Carnal Mitts" "Assassin's Mitts" "Murder Mitts" "Carnal Boots" "Assassin's Boots" "Murder Boots" "Blood Raiment" "Sadist Garb" "Carnal Armour"
-	Rarity == Rare
-	SetFontSize 45
-    SetTextColor 147 235 206 255 #93EBCE
-    SetBorderColor 147 235 206 255 #93EBCE
-    SetBackgroundColor 0 66 37 240 #004225
-	PlayAlertSound 2 300
-	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
-
-# 에너지 보호막 상위 방어구
+# 지능(Int) 상위 방어구
 Show #end
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 85
+	ItemLevel >= 83
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
-	BaseType == "Hubris Circlet" "Mind Cage" "Sorcerer Gloves" "Arcanist Gloves" "Sorcerer Boots" "Arcanist Slippers" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
+	BaseType == "Sage Gloves" "Warlock Gloves" "Sage Slippers" "Warlock Boots" "Arcane Vestment" "Arcane Vestment" "Nightweave Robe" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet"
 	Rarity == Rare
 	SetFontSize 45
     SetTextColor 169 221 253 255 #A9DDFD
@@ -2849,14 +2932,32 @@ Show #end
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
+# 지능(Int) 방어구
 Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
 	Corrupted False
-	ItemLevel >= 68
+	ItemLevel >= 73
+	Class "Helmets" "Gloves" "Boots" "Body Armours"
+	BaseType == "Hubris Circlet" "Mind Cage" "Sorcerer Gloves" "Arcanist Gloves" "Sorcerer Boots" "Arcanist Slippers" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment" "Sage Gloves" "Warlock Gloves" "Sage Slippers" "Warlock Boots" "Arcane Vestment" "Arcane Vestment" "Nightweave Robe" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet"
+	Rarity == Rare
+	SetFontSize 45
+    SetTextColor 169 221 253 255 #A9DDFD
+    SetBorderColor 169 221 253 255 #A9DDFD
+    SetBackgroundColor 2 63 101 240 #023F65
+	PlayAlertSound 2 300
+	PlayEffect Yellow 
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
+
+Hide #early
+	HasInfluence None
+	Identified False
+	Mirrored False
+	Corrupted False
+	ItemLevel <= 72
 	Class "Helmets" "Gloves" "Boots" "Body Armours"
 	BaseType == "Hubris Circlet" "Mind Cage" "Sorcerer Gloves" "Arcanist Gloves" "Sorcerer Boots" "Arcanist Slippers" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
 	Rarity == Rare
@@ -2866,7 +2967,7 @@ Hide #mid
     SetBackgroundColor 2 63 101 240 #023F65
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	# MinimapIcon 1 Yellow UpsideDownHouse #early
 
 # 방어도 방패(최고의 거대, 초대형 거대, 에조미어 거대, 에조미어 거대)
 Show #end
@@ -2884,7 +2985,7 @@ Show #end
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2901,7 +3002,7 @@ Hide #mid
     SetBackgroundColor 128 24 24 240 #801818
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 희귀 아이템 장신구
@@ -2924,7 +3025,7 @@ Show #end
     SetBackgroundColor 203 206 144 240 #CBCE90
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2941,7 +3042,7 @@ Hide #mid
     SetBackgroundColor 203 206 144 240 #CBCE90
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 Show #end
 	HasInfluence None
@@ -2955,10 +3056,10 @@ Show #end
 	SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 255 248 230 255 #FFF8E6
-    SetBackgroundColor 213 177 16 240 #D5B110
+    SetBackgroundColor 203 161 53 240 #CBA135
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -2972,10 +3073,10 @@ Hide #mid
 	SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 255 248 230 255 #FFF8E6
-    SetBackgroundColor 213 177 16 240 #D5B110
+    SetBackgroundColor 203 161 53 240 #CBA135
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 # ================================================
 # 희귀 아이템 소환수
@@ -3004,7 +3105,7 @@ Show #end
     SetBackgroundColor 29 10 66 240 #1D0A42
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #end
+	# MinimapIcon 1 Yellow UpsideDownHouse #end
 
 Hide #mid
 	HasInfluence None
@@ -3021,7 +3122,7 @@ Hide #mid
     SetBackgroundColor 29 10 66 240 #1D0A42
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
-	MinimapIcon 1 Yellow UpsideDownHouse #mid
+	# MinimapIcon 1 Yellow UpsideDownHouse #mid
 
 
 
@@ -3034,7 +3135,7 @@ Hide #mid
 Hide #early
 	HasInfluence None
 	ItemLevel >= 75
-	ItemLevel <= 85
+	ItemLevel <= 100
 	Identified False
 	HasInfluence None
 	FracturedItem False
@@ -4102,7 +4203,7 @@ Hide #early
 # 방어 코드
 Show #default
 	Rarity Unique
-	Class != "Maps"
+	Class != "Maps" "Contracts" "Blueprints"
 	SetFontSize 45
 	SetTextColor 255 0 255 255
 	SetBorderColor 255 0 255 255
@@ -4167,11 +4268,14 @@ Show
 # 강탈 고유 계약과 도면
 Show
 	Class == "Contracts" "Blueprints"
-	Rarity == Unique
+	Rarity == Unique 
 	SetFontSize 45
     SetTextColor 255 255 255 255 #FFFFFF
     SetBorderColor 255 255 255 255 #FFFFFF
     SetBackgroundColor 175 96 37 240 #AF6025
+	PlayAlertSound 3 300
+	PlayEffect White Temp
+	MinimapIcon 0 White Cross
 
 # 비-고유 강탈 계약
 Show
@@ -4260,9 +4364,9 @@ Show #default
 	Rarity Normal Magic
 	Class "Flasks"
 	SetFontSize 45
-	SetTextColor 172 225 175 255
-	SetBorderColor 172 225 175 255
-	SetBackgroundColor 20 20 0 255
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 20 20 0 240 #141400
 	PlayAlertSound 3 300
 	PlayEffect Green
 	MinimapIcon 1 Green Diamond
@@ -4386,30 +4490,42 @@ Hide #default
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 25 100 75
 
+# 타락된 일반 플라스크 숨기기
+Hide #default
+	Corrupted True
+	Rarity == Normal
+	Class "Flasks"
+	SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 233 30 99 255 #E91E63
+    SetBackgroundColor 20 20 0 240 #141400
+
 # 특수 플라스크
 Show #highEnd
     ItemLevel >= 85 
 	Rarity Normal Magic
 	Class == "Utility Flasks" 
 	SetFontSize 45
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 25 100 75
+    # SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 25 100 75 240 #19644B
 
 Show #end
 	Rarity Normal Magic
 	Class == "Utility Flasks" 
 	SetFontSize 45
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 25 100 75
-	# SetTextColor 255 255 255 255
+    # SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 25 100 75 240 #19644B
 
 # 위에서 걸러지지 않은 플라스크는 모두 보이기
 Show #default
 	Rarity Normal Magic
 	Class "Flasks"
 	SetFontSize 40
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 25 100 75
+    # SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 25 100 75 240 #19644B
 
 # ================================================
 # 갑충석
@@ -5186,11 +5302,24 @@ Show #highEnd
     SetBackgroundColor 43 45 66 240 #2B2D42
     SetFontSize 45
 
+# 심연 주얼 미확인(희귀)
+Show #end
+    Mirrored False
+    Identified False
+    ItemLevel >= 75
+    Class == "Abyss Jewels"
+    Rarity == Rare
+    BaseType == "Searching Eye Jewel" "Ghastly Eye Jewel" "Murderous Eye Jewel"
+    SetTextColor 213 169 159 255 #D5A99F
+    SetBorderColor 145 229 246 255 #91E5F6
+    SetBackgroundColor 43 45 66 240 #2B2D42
+    SetFontSize 45
+
 # 심연 주얼 미확인(마법)
 Show #end
     Mirrored False
     Identified False
-    ItemLevel >= 83
+    ItemLevel >= 75
     Rarity == Magic
     BaseType == "Searching Eye Jewel" "Ghastly Eye Jewel" "Murderous Eye Jewel"
     SetTextColor 145 229 246 255 #91E5F6
@@ -5754,7 +5883,7 @@ Show
     SetBackgroundColor 160 78 246 240 #A04EF6
 	PlayAlertSound 2 300
 	PlayEffect Blue
-	MinimapIcon 2 Blue Kite
+	MinimapIcon 2 Yellow Kite
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 #군단 인큐베이터 숨기기
@@ -5834,7 +5963,32 @@ Show
 # 무궁한 카루이 파편 Timeless Karui Splinter
 # ================================================
 
+# 마라케스 파편, 템플러 파편
 Show #highEnd
+	StackSize >= 8
+	Class == "Stackable Currency"
+	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
+	SetFontSize 45
+	SetTextColor 208 240 192 255
+	SetBorderColor 208 240 192 255
+	SetBackgroundColor 0 0 0 255
+    PlayEffect White Temp
+	MinimapIcon 2 White Kite #highEnd
+	PlayAlertSound 2 300
+
+Show #end
+	StackSize >= 4
+	Class == "Stackable Currency"
+	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
+	SetFontSize 45
+	SetTextColor 208 240 192 255
+	SetBorderColor 208 240 192 255
+	SetBackgroundColor 0 0 0 255
+    PlayEffect White Temp
+	MinimapIcon 2 White Kite #end
+	PlayAlertSound 2 300
+
+Hide #mid
 	StackSize >= 2
 	Class == "Stackable Currency"
 	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
@@ -5842,60 +5996,74 @@ Show #highEnd
 	SetTextColor 208 240 192 255
 	SetBorderColor 208 240 192 255
 	SetBackgroundColor 0 0 0 255
-    PlayEffect Green
-	MinimapIcon 1 Green Hexagon
+    PlayEffect White Temp
+	MinimapIcon 2 White Kite #mid
 	PlayAlertSound 2 300
 
-Show #end
+Hide #early
 	Class == "Stackable Currency"
 	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
 	SetFontSize 45
 	SetTextColor 208 240 192 255
 	SetBorderColor 208 240 192 255
 	SetBackgroundColor 0 0 0 255
-    PlayEffect Green
-	MinimapIcon 1 Green Hexagon #end
+    PlayEffect White Temp
+	MinimapIcon 2 White Kite #mid
 	PlayAlertSound 2 300
 
+# 바알 파편, 영원한 제국 파편, 카루이 파편
 Show #highEnd
-	StackSize >= 2
+	StackSize >= 8
 	Class == "Stackable Currency"
-	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter"
+	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
 	SetFontSize 45
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Hexagon
+    MinimapIcon 2 White Kite
 	PlayAlertSound 2 300
 
 Show #end
+	StackSize >= 4
 	Class == "Stackable Currency"
-	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter"
+	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
 	SetFontSize 45
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Hexagon #end
+    MinimapIcon 2 White Kite #end
 	PlayAlertSound 2 300
 
-Show #highEnd
+Hide #mid
 	StackSize >= 2
 	Class == "Stackable Currency"
-	BaseType == "Timeless Karui Splinter"
+	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
 	SetFontSize 45
-    SetTextColor 193 209 240 255
-	SetBorderColor 193 209 240 255
+    SetTextColor 240 193 209 255
+	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Hexagon
+    MinimapIcon 2 White Kite #mid
+	PlayAlertSound 2 300
 
-Show #end
+Hide #early
 	Class == "Stackable Currency"
-	BaseType == "Timeless Karui Splinter"
+	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
+	SetFontSize 45
+    SetTextColor 240 193 209 255
+	SetBorderColor 240 193 209 255
+	SetBackgroundColor 0 0 0 255
+    MinimapIcon 2 White Kite #early
+	PlayAlertSound 2 300
+
+# 방어코드
+Show #
+	Class == "Stackable Currency"
+	BaseType "Timeless"
 	SetFontSize 45
     SetTextColor 193 209 240 255
 	SetBorderColor 193 209 240 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Hexagon #end
+    MinimapIcon 2 White Kite
 
 # ================================================
 # 가디언 및 정복자 지도
@@ -5933,9 +6101,9 @@ Show
 	HasInfluence Crusader Hunter Redeemer Warlord
 	Class == "Maps"
 	Rarity != Unique
-    SetTextColor 199 211 212 255 #C7D3D4
-    SetBorderColor 199 211 212 255 #C7D3D4
-    SetBackgroundColor 96 63 131 240 #603F83
+    SetTextColor 255 213 239 255 #FFD5EF
+    SetBorderColor 255 213 239 255 #FFD5EF
+    SetBackgroundColor 116 48 90 240 #74305A
 	SetFontSize 45
 	PlayAlertSound 5 300
 	PlayEffect Red
@@ -6065,6 +6233,25 @@ Show
 	PlayEffect Purple
 	MinimapIcon 1 Purple Square
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+# 타락된 일반 지도 숨기기
+Hide #end
+    Corrupted True
+	Class == "Maps"
+	Rarity Normal
+    SetTextColor 240 240 240 255 #F0F0F0
+    SetBorderColor 233 30 99 255 #E91E63
+    SetBackgroundColor 17 17 17 240 #111111
+	SetFontSize 45
+
+Show #end
+    Corrupted True
+	Class == "Maps"
+	Rarity == Magic Rare
+    SetTextColor 240 240 240 255 #F0F0F0
+    SetBorderColor 233 30 99 255 #E91E63
+    SetBackgroundColor 17 17 17 240 #111111
+	SetFontSize 45
 
 # 지도 14 이상
 Show
