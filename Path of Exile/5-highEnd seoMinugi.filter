@@ -11,6 +11,18 @@
 # 3.25 신규 아이템들 추후 가치에 맞게 위치 재조정
 # ================================================
 
+# 점술카드 테스트
+# Show #default
+#     Class == "Divination Cards"
+#     SetFontSize 45
+#     SetTextColor 255 248 231 255 #FFF8E7
+#     SetBorderColor 255 248 231 255 #FFF8E7
+#     SetBackgroundColor 135 50 28 240 #87321C
+#     PlayAlertSound 4 300
+#     PlayEffect Pink
+#     MinimapIcon 0 Pink Raindrop 
+
+
 # 투영하는 안개
 Show #default
     Class == "Stackable Currency"
@@ -49,23 +61,10 @@ Show
     PlayEffect Purple
     MinimapIcon 2 Purple Cross
 
-# 룬
+# 칼구르 룬
 Show #default
     Class == "Stackable Currency"
-    BaseType == "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
-    SetFontSize 45
-    SetTextColor 245 255 250 255 #F5FFFA
-    SetBorderColor 0 50 98 255 #003262
-    SetBackgroundColor 36 107 206 240 #246BCE
-    PlayAlertSound 6 300
-    PlayEffect Red
-    MinimapIcon 0 Red Star
-    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
-
-# 3.25 신규 점술카드 5개
-Show #default
-    Class == "Divination Cards"
-    BaseType == "Father's Love" "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings"
+    BaseType == "Power Rune" "Time Rune" "Mountain Rune" "Journey Rune" "Bounty Rune"
     SetFontSize 45
     SetTextColor 43 4 52 255 #2B0434
     SetBorderColor 43 4 52 255 #2B0434
@@ -75,38 +74,78 @@ Show #default
     MinimapIcon 0 Red Star
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "River Rune" "War Rune" "Life Rune" "Bound Rune" "Sun Rune"
+    SetFontSize 45
+    SetTextColor 245 255 250 255 #F5FFFA
+    SetBorderColor 0 50 98 255 #003262
+    SetBackgroundColor 36 107 206 240 #246BCE
+    PlayAlertSound 3 300
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Circle
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
 # ================================================
 # 3.25 신규 아이템 골드
 # ================================================
 Show
-    StackSize >= 200
+    StackSize >= 2000
     Class == "Gold"
     BaseType == "Gold"
-    SetFontSize 33
+    SetFontSize 45
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+    MinimapIcon 0 Yellow Diamond
+
+Show
+    StackSize >= 1000
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 42
     SetTextColor 212 175 55 255 #D4AF37
     # SetBorderColor 212 175 55 255 #D4AF37
     SetBackgroundColor 16 16 16 240 #000000
     PlayEffect Yellow
     CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+    MinimapIcon 0 Yellow Diamond
+
+Show
+    StackSize >= 500
+    Class == "Gold"
+    BaseType == "Gold"
+    SetFontSize 40
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+    MinimapIcon 0 Yellow Diamond
 
 Show
     StackSize >= 100
     Class == "Gold"
     BaseType == "Gold"
-    SetFontSize 30
+    SetFontSize 38
     SetTextColor 212 175 55 255 #D4AF37
     # SetBorderColor 212 175 55 255 #D4AF37
     SetBackgroundColor 16 16 16 240 #000000
-    PlayEffect Yellow Temp
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Diamond
 
 Show
+    StackSize < 100
     Class == "Gold"
     BaseType == "Gold"
-    SetFontSize 27
+    SetFontSize 35
     SetTextColor 212 175 55 255 #D4AF37
     # SetBorderColor 212 175 55 255 #D4AF37
     SetBackgroundColor 16 16 16 240 #000000
-    PlayEffect Yellow Temp
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Diamond
 
 # ================================================
 # 3.23 고난 신규 아이템
@@ -123,7 +162,7 @@ Show
     MinimapIcon 0 Green Kite
 
 # 가격 체크 후 비싼 것 재조정 필요
-Show
+Hide #end
     Class == "Tinctures"
     SetFontSize 45
     SetTextColor 2 42 12 255 #022A0C
@@ -631,10 +670,10 @@ Show #default
     SetTextColor 193 166 47 255 #C1A62F
     SetBorderColor 193 166 47 255 #C1A62F
     SetBackgroundColor 46 62 43 240 #2E3E2B
-    PlayAlertSound 2 300
+    PlayAlertSound 6 300
     PlayEffect Red
     MinimapIcon 0 Red Star
-    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+    CustomAlertSoundOptional "./CustomSound/divine1.wav" 300
 
 # 선구자의 오브
 Show #default
@@ -659,7 +698,6 @@ Show #highEnd
     SetBackgroundColor 26 71 95 240 #1A475F
     MinimapIcon 1 Yellow Circle #highEnd
 
-
 # 카드 묶음, 장막의 갑충석
 Show #default
     Class == "Stackable Currency"
@@ -667,7 +705,7 @@ Show #default
     SetFontSize 45
     SetTextColor 225 224 213 255 #E1E0D5
     SetBorderColor 115 54 53 255 #733635
-    SetBackgroundColor 102 97 87 240 #666157
+    SetBackgroundColor 78 75 68 240 #4E4B44
     PlayAlertSound 2 300
     PlayEffect Yellow
     MinimapIcon 1 Yellow Cross
@@ -763,14 +801,14 @@ Show #default
     CustomAlertSoundOptional "./CustomSound/chaos1.wav" 300
 
 # 카오스 파편
-Hide #end
+Show #highEnd
     Class == "Stackable Currency"
     BaseType == "Chaos Shard"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 217 181 0 240 #D9B500
-    #MinimapIcon 2 White Circle #end
+    MinimapIcon 2 White Circle #highEnd
 
 # ================================================
 # Orb of Scouring 정제의 오브
@@ -864,14 +902,14 @@ Hide #end
     #MinimapIcon 2 White Circle #end
 
 # 주입의 오브(조건부 사용 효과)
-Show #highEnd
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Instilling Orb"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 143 118 179 240 #8F76B3
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #end
 
 # 자극의 오브
 Hide #end
@@ -938,7 +976,7 @@ Hide #end
 
 # 색채의 오브
 Show #highEnd
-    StackSize >= 4
+    StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Chromatic Orb"
     SetFontSize 45
@@ -1002,7 +1040,7 @@ Hide #end
 
 # 변화의 오브
 Show #highEnd
-    StackSize >= 4
+    StackSize >= 3
     AreaLevel >= 80
     Class == "Stackable Currency"
     BaseType == "Orb of Alteration" 
@@ -1051,14 +1089,14 @@ Show #highEnd
     MinimapIcon 2 White Circle #highEnd
 
 # 확장의 오브
-Show #highEnd
-    StackSize >= 5
-    Class == "Stackable Currency"
-    BaseType == "Orb of Augmentation" 
-    SetFontSize 45
-    SetTextColor 170 158 130 255 #AA9E82
-    SetBorderColor 255 248 231 255 #FFF8E7
-    SetBackgroundColor 40 15 1 240 #280F01
+# Show #highEnd
+#     StackSize >= 5
+#     Class == "Stackable Currency"
+#     BaseType == "Orb of Augmentation" 
+#     SetFontSize 45
+#     SetTextColor 170 158 130 255 #AA9E82
+#     SetBorderColor 255 248 231 255 #FFF8E7
+#     SetBackgroundColor 40 15 1 240 #280F01
     
 
 # 기회의 오브, 확장의 오브
@@ -1085,7 +1123,7 @@ Hide #end
 # ================================================	
 
 # 그 외 파편은 숨김 처리
-Hide #early
+Hide #mid
     Class == "Stackable Currency"
     BaseType "Shard"
     SetFontSize 45
@@ -1205,7 +1243,7 @@ Hide #starter
 
 # 진화의 오브
 Show #highEnd
-    StackSize >= 30
+    StackSize >= 20
     Class == "Stackable Currency"
     BaseType == "Orb of Transmutation"
     SetFontSize 45
@@ -1241,7 +1279,7 @@ Hide #early
 
 # Portal Scroll 포탈 주문서
 Show #highEnd
-    StackSize >= 8
+    StackSize >= 6
     Class == "Stackable Currency"
     BaseType == "Portal Scroll" 
     SetFontSize 45
@@ -1467,42 +1505,52 @@ Show
 
 # Omen of Fortune 행운의 징조
 # Omen of Connections 연결의 징조
-# Omen of Amelioration 개량의 징조
-# Omen of Blanching 표백의 징조
 Show 
 	Class == "Stackable Currency"
-	BaseType == "Omen of Fortune" "Omen of Connections" "Omen of Amelioration" "Omen of Blanching"
+	BaseType == "Omen of Fortune" "Omen of Connections"
+	SetFontSize 45
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
+	PlayAlertSound 6 300
+	PlayEffect Purple
+	MinimapIcon 0 Purple Star
+	CustomAlertSoundOptional "./CustomSound/divine1.wav" 300
+
+# Omen of Amelioration 개량의 징조
+# Omen of Blanching 표백의 징조
+# Omen of the Jeweller 보석상의 징조
+# Omen of Brilliance 광채의 징조
+Show
+	Class == "Stackable Currency"
+	BaseType "Omen of Amelioration" "Omen of Blanching" "Omen of the Jeweller" "Omen of Brilliance"
 	SetFontSize 45
 	SetTextColor 252 240 197 255 #FCF0C5
 	SetBorderColor 252 240 197 255 #FCF0C5 
 	SetBackgroundColor 92 55 24 255 #5C3718
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 0 Yellow Star
-	CustomAlertSoundOptional "./CustomSound/good1.wav" 300
-
-# Omen of Brilliance 광채의 징조
-# Omen of the Jeweller 보석상의 징조
-Show
-	Class == "Stackable Currency"
-	BaseType "Omen of Brilliance" "Omen of the Jeweller"
-	SetFontSize 45
-	SetTextColor 252 240 197 255
-	SetBorderColor 252 240 197 255 
-	SetBackgroundColor 49 29 13 255 
-	PlayAlertSound 2 300
-	PlayEffect Yellow
 	MinimapIcon 0 Yellow Cross
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+Hide #end
+	Class == "Stackable Currency"
+	BaseType "Omen of Adrenaline" "Omen of Death's Door" "Omen of Death-dancing" "Omen of Refreshment" "Omen of Return" "Omen of the Soul Devourer"
+	SetFontSize 45
+    SetTextColor 252 240 197 255 #FCF0C5
+    SetBorderColor 252 240 197 255 #FCF0C5
+    SetBackgroundColor 49 29 13 240 #311D0D
+	PlayAlertSound 2 300
+	PlayEffect Yellow temp
 
 # 그 외 가치 없는 징조들
 Show
 	Class == "Stackable Currency"
 	BaseType "Omen of"
 	SetFontSize 45
-	SetTextColor 185 217 235 255
-	SetBorderColor 185 217 235 255
-	SetBackgroundColor 0 0 0 255
+    SetTextColor 252 240 197 255 #FCF0C5
+    SetBorderColor 252 240 197 255 #FCF0C5
+    SetBackgroundColor 49 29 13 240 #311D0D
 	PlayEffect White
 
 # ================================================
@@ -1548,7 +1596,19 @@ Show #highEnd
     PlayEffect Brown Temp
     MinimapIcon 1 Brown Circle #highEnd
 
-Hide #early
+Hide #end
+	StackSize < 150
+	Class == "Stackable Currency"
+	BaseType == "Rogue's Marker"
+	SetFontSize 45
+	SetTextColor 255 248 231 255
+	SetBorderColor 255 248 231 255
+	SetBackgroundColor 89 38 11 204
+    PlayAlertSound 2 300
+    PlayEffect Brown Temp
+    MinimapIcon 1 Brown Circle
+
+Show
 	Class == "Stackable Currency"
 	BaseType == "Rogue's Marker"
 	SetFontSize 45
@@ -1575,17 +1635,17 @@ Show
 	PlayEffect Purple 
 	MinimapIcon 0 Purple Star
 
-# 나름 비쌌던 문신
+# 나름 비쌌던 문신(10c 이상의 가치있는 문신들)
 Show
 	Class == "Stackable Currency"
-	BaseType "Tattoo of the Tasalio Scout" "Tattoo of the Ramako Fleetfoot" "Tattoo of the Ramako Shaman" "Tattoo of the Tawhoa Herbalist" "Tattoo of the Rongokurai Turtle" "Tattoo of the Tukohama Warcaller" "Tattoo of the Valako Shaman" "Tattoo of the Ramako Sniper" "Tattoo of the Arohongui Shaman" "Tattoo of the Hinekora Storyteller"
+	BaseType "Tattoo of the Ramako Shaman" "Tattoo of the Tasalio Warrior" "Tattoo of the Ngamahu Warmonger" "Tattoo of the Tawhoa Shaman" "Tattoo of the Tukohama Warcaller" "Tattoo of the Ramako Fleetfoot" "Tattoo of the Hinekora Storyteller" "Tattoo of the Rongokurai Turtle" "Tattoo of the Valako Shieldbearer" "Tattoo of the Hinekora Warmonger" "Tattoo of the Kitava Shaman" "Tattoo of the Ngamahu Firewalker" "Tattoo of the Ramako Archer" "Tattoo of the Tasalio Scout" "Tattoo of the Tawhoa Herbalist"
 	SetFontSize 45
     SetTextColor 204 204 255 255 #CCCCFF
     SetBorderColor 204 204 255 255 #CCCCFF
     SetBackgroundColor 32 38 77 240 #20264D
-	PlayAlertSound 2 300
+	PlayAlertSound 6 300
 	PlayEffect Purple 
-	MinimapIcon 1 Purple Cross
+	MinimapIcon 0 Purple Cross
 
 # 그 외 문신
 Show
@@ -2185,6 +2245,19 @@ Show #default
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow UpsideDownHouse
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+# 식별된 아이템 중 복제된 아이템 보이기(투영 아이템)
+Show
+	Identified True
+	Mirrored True
+	Rarity == Rare
+	Class "Rings" "Amulets"
+	SetFontSize 42
+    SetTextColor 214 224 136 255 #D6E088
+    SetBorderColor 59 74 78 255 #3B4A4E
+    SetBackgroundColor 0 0 0 240 #000000
+
+# 위상 아이템 처리 추가하기
 
 # 식별된 아이템 중 필요 없는 아이템 숨기기
 Hide
@@ -3124,6 +3197,28 @@ Hide #mid
 	PlayEffect Yellow 
 	# #MinimapIcon 1 Yellow UpsideDownHouse #mid
 
+# Breach Ring 균열 반지
+Show #highEnd
+	ItemLevel >= 83
+	Class == "Rings"
+	BaseType == "Breach Ring"
+	SetFontSize 45
+	SetTextColor 219 103 231 255
+	SetBorderColor 219 103 231 255
+	SetBackgroundColor 0 0 0 255
+	# PlayAlertSound 1 300
+	MinimapIcon 2 Yellow UpsideDownHouse #highEnd
+
+Hide #end
+	ItemLevel < 83
+	Class == "Rings"
+	BaseType == "Breach Ring"
+	SetFontSize 45
+	SetTextColor 219 103 231 255
+	SetBorderColor 219 103 231 255
+	SetBackgroundColor 0 0 0 255
+	# PlayAlertSound 1 300
+	#MinimapIcon 2 Yellow UpsideDownHouse #end
 
 
 
@@ -4217,7 +4312,7 @@ Hide #end
 	PlayEffect Brown
 	#MinimapIcon 2 Brown Star #early
 
-Hide #end
+Show #highEnd
 	Rarity Unique
 	BaseType == "Abyssal Axe" "Ambusher" "Ancient Greaves" "Ancient Spirit Shield" "Antique Greaves" "Antique Rapier" "Arcanist Gloves" "Arcanist Slippers" "Assassin Bow" "Assassin's Garb" "Auric Mace" "Aventail Helmet" "Awl" "Barbute Helmet" "Baroque Round Shield" "Basket Rapier" "Bastard Sword" "Black Maw Talisman" "Blazing Arrow Quiver" "Bone Armour" "Boot Blade" "Boot Knife" "Branded Kite Shield" "Brass Maul" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Boots" "Bronzescale Gauntlets" "Buckskin Tunic" "Carnal Sceptre" "Cedar Tower Shield" "Chain Gloves" "Chiming Spirit Shield" "Clasped Boots" "Clasped Mitts" "Cleaver" "Close Helmet" "Clutching Talisman" "Compound Spiked Shield" "Conjurer Boots" "Conjurer Gloves" "Conquest Chainmail" "Copper Plate" "Corrugated Buckler" "Corsair Sword" "Crude Bow" "Crusader Chainmail" "Crusader Plate" "Crystal Belt" "Crystal Sceptre" "Cutthroat's Garb" "Death Bow" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Deerskin Gloves" "Deicide Mask" "Demon Dagger" "Destiny Leather" "Destroyer Regalia" "Diamond Flask" "Diamond Ring" "Dragonscale Gauntlets" "Dread Maul" "Dream Mace" "Driftwood Wand" "Ebony Tower Shield" "Eelskin Boots" "Eelskin Gloves" "Elder Sword" "Elegant Round Shield" "Embroidered Gloves" "Enameled Buckler" "Engraved Wand" "Estoc" "Etched Greatsword" "Eternal Burgonet" "Ezomyte Axe" "Ezomyte Blade" "Feathered Arrow Quiver" "Festival Mask" "Flaying Knife" "Fright Claw" "Full Dragonscale" "Gemstone Sword" "Gilded Sallet" "Glorious Plate" "Gnarled Branch" "Goathide Boots" "Goathide Gloves" "Goat's Horn" "Graceful Sword" "Grand Mana Flask" "Great Helmet" "Great Mallet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Hallowed Hybrid Flask" "Harbinger Bow" "Harmonic Spirit Shield" "Headsman Axe" "Heavy Arrow Quiver" "Highborn Staff" "Highland Blade" "Holy Chainmail" "Imperial Maul" "Infernal Axe" "Iron Circlet" "Iron Gauntlets" "Iron Hat" "Iron Mask" "Iron Staff" "Ironscale Boots" "Ironscale Gauntlets" "Ironwood Buckler" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Jasper Chopper" "Jewelled Foil" "Karui Chopper" "Karui Sceptre" "Lacquered Buckler" "Laminated Kite Shield" "Lathi" "Latticed Ringmail" "Leather Cap" "Legion Gloves" "Lion Pelt" "Lion Sword" "Long Bow" "Lunaris Circlet" "Maple Round Shield" "Marble Amulet" "Meatgrinder" "Mesh Boots" "Midnight Blade" "Military Staff" "Mind Cage" "Mirrored Spiked Shield" "Mosaic Kite Shield" "Nailed Fist" "Nightmare Bascinet" "Nubuck Gloves" "Occultist's Vestment" "Omen Wand" "Opal Sceptre" "Ornate Mace" "Ornate Ringmail" "Ornate Sword" "Painted Buckler" "Penetrating Arrow Quiver" "Pine Buckler" "Plank Kite Shield" "Plate Vest" "Platinum Kris" "Platinum Sceptre" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Quartz Flask" "Quicksilver Flask" "Ranger Bow" "Rawhide Tower Shield" "Reaver Helmet" "Reaver Sword" "Recurve Bow" "Regicide Mask" "Reinforced Tower Shield" "Ritual Sceptre" "Rock Breaker" "Rotfeather Talisman" "Rotted Round Shield" "Royal Axe" "Royal Sceptre" "Royal Skean" "Royal Staff" "Rusted Sword" "Sabre" "Samite Gloves" "Samnite Helmet" "Sanctified Life Flask" "Sanctified Mana Flask" "Satin Gloves" "Scholar Boots" "Secutor Helm" "Serpentscale Boots" "Serrated Arrow Quiver" "Shadow Axe" "Shagreen Boots" "Shagreen Gloves" "Sharkskin Boots" "Sharkskin Tunic" "Sharktooth Arrow Quiver" "Short Bow" "Silk Slippers" "Silken Vest" "Simple Robe" "Sinner Tricorne" "Skinning Knife" "Sledgehammer" "Slink Gloves" "Soldier Boots" "Soldier Helmet" "Spiked Club" "Spike-Point Arrow Quiver" "Spiraled Wand" "Steel Circlet" "Steel Gauntlets" "Steelhead" "Stibnite Flask" "Stiletto" "Strapped Boots" "Strapped Mitts" "Studded Round Shield" "Sun Leather" "Supreme Spiked Shield" "Tarnished Spirit Shield" "Teak Round Shield" "Terror Claw" "Terror Maul" "Thresher Claw" "Throat Stabber" "Tiger Sword" "Timeworn Claw" "Titan Gauntlets" "Tomahawk" "Trapper Boots" "Tribal Circlet" "Tricorne" "Twilight Blade" "Two-Toned Boots" "Tyrant's Sekhem" "Ursine Pelt" "Vaal Buckler" "Vaal Hatchet" "Velvet Gloves" "Velvet Slippers" "Vile Arrow Quiver" "Vile Staff" "Vine Circlet" "Visored Sallet" "Void Axe" "War Buckler" "War Hammer" "War Sword" "Wereclaw Talisman" "Whalebone Rapier" "Wild Leather" "Woodsplitter" "Wool Gloves" "Wool Shoes" "Wrapped Mitts" "Wyrmscale Gauntlets"
 	SetFontSize 40
@@ -4226,7 +4321,7 @@ Hide #end
 	SetBackgroundColor 20 20 0 255
 	PlayAlertSound 3 300
 	PlayEffect Brown
-	#MinimapIcon 2 Brown Star #early
+	MinimapIcon 2 Brown Star #highEnd
 
 # 방어 코드
 Show #default
@@ -4559,71 +4654,76 @@ Show #default
 # 갑충석
 # ================================================
 
+# 80c 이상
 Show
     Class == "Map Fragments"
-    BaseType == "Divination Scarab of Pilfering" "Horned Scarab of Bloodlines" "Horned Scarab of Preservation" "Titanic Scarab of Legend" "Bestiary Scarab of the Shadowed Crow" "Divination Scarab of Plenty" "Horned Scarab of Awakening"
+    BaseType == "Horned Scarab of Preservation" "Horned Scarab of Glittering" "Horned Scarab of Pandemonium" "Horned Scarab of Awakening" "Horned Scarab of Bloodlines" "Horned Scarab of Tradition" "Ambush Scarab of Containment" "Ultimatum Scarab of Catalysing"
+    SetFontSize 45
+    SetTextColor 91 50 86 255 #5B3256
+    SetBorderColor 91 50 86 255 #5B3256
+    SetBackgroundColor 255 218 233 240 #FFDAE9
+    PlayAlertSound 6 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Star
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
+
+# 40~60c 언저리
+Show
+    Class == "Map Fragments"
+    BaseType == "Divination Scarab of Pilfering" "Essence Scarab of Calcification" "Domination Scarab of Terrors" 
     SetFontSize 45
     SetTextColor 85 17 38 255 #551126
     SetBorderColor 85 17 38 255 #551126
     SetBackgroundColor 229 238 235 240 #E5EEEB
-    PlayEffect Green
-    MinimapIcon 0 Green Star
+    PlayEffect Purple
+    MinimapIcon 1 Purple Cross
     CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
-# 천벌 갑충석
-Show
-    Class == "Map Fragments"
-    BaseType "Horned"
-    SetFontSize 45
-    SetTextColor 17 17 17 255 #111111
-    SetBorderColor 17 17 17 255 #111111
-    SetBackgroundColor 120 146 138 245 #78928A
-    PlayEffect Green Temp
-    MinimapIcon 1 Green Cross
-
-# 예언자, 성유물, 매복, 선구자 갑충석
+# 20c 언저리
 Show 
     Class == "Map Fragments"
-    BaseType == "Divination Scarab of The Cloister" "Titanic Scarab" "Titanic Scarab of Treasures" "Ambush Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Ambush Scarab of Containment" "Ambush Scarab of Discernment" "Harbinger Scarab" "Harbinger Scarab of Obelisks" "Harbinger Scarab of Regency" "Harbinger Scarab of Warhoards"
-    SetFontSize 45
-    SetTextColor 17 17 17 255 #111111
-    SetBorderColor 17 17 17 255 #111111
-    SetBackgroundColor 120 146 138 245 #78928A
-    PlayEffect Green Temp
-    MinimapIcon 1 Green Cross
-
-# 군단, 탐험, 에센스, 수확, 역병, 심연
-Show 
-    Class == "Map Fragments"
-    BaseType "Legion Scarab" "Legion Scarab of Officers" "Legion Scarab of Command" "Legion Scarab of The Sekhema" "Legion Scarab of Eternal Conflict" "Expedition Scarab" "Expedition Scarab of Runefinding" "Expedition Scarab of Verisium Powder" "Expedition Scarab of the Skald" "Expedition Scarab of Archaeology" "Essence Scarab" "Essence Scarab of Ascent" "Essence Scarab of Stability" "Essence Scarab of Calcification" "Harvest Scarab" "Harvest Scarab of Doubling" "Harvest Scarab of Cornucopia" "Blight Scarab" "Blight Scarab of Bounty" "Blight Scarab of the Blightheart" "Blight Scarab of Blooming" "Abyss Scarab" "Abyss Scarab of Multitudes" "Abyss Scarab of Edifice" "Abyss Scarab of Emptiness" "Scarab of Divinity"
-    SetFontSize 45
-    SetTextColor 17 17 17 255 #111111
-    SetBorderColor 17 17 17 255 #111111
-    SetBackgroundColor 120 146 138 245 #78928A
-    PlayEffect Green Temp
-    MinimapIcon 1 Green Circle
-
-
-# 균열, 결전, 환영, 의식, 지도 제작자, 지배
-Show 
-    Class == "Map Fragments"
-    BaseType "Breach Scarab" "Breach Scarab of the Dreamer" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Breach Scarab of Snares" "Ultimatum Scarab" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Dueling" "Ultimatum Scarab of Catalysing" "Ultimatum Scarab of Inscription" "Delirium Scarab" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Cartography Scarab of Escalation" "Cartography Scarab of Risk" "Cartography Scarab of Singularity" "Cartography Scarab of Corruption" "Cartography Scarab of the Multitude" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Wisps" 
+    BaseType ==  "Ambush Scarab of Discernment" "Harvest Scarab of Cornucopia" "Blight Scarab of Blooming" "Ultimatum Scarab of Dueling" "Cartography Scarab of Corruption"
     SetFontSize 45
     SetTextColor 255 248 231 255 #FFF8E7
     SetBorderColor 255 248 231 255 #FFF8E7
-    SetBackgroundColor 78 97 92 245 #4E615C
-    PlayEffect Green Temp
-    MinimapIcon 1 Green Circle
+    SetBackgroundColor 35 49 45 245 #23312D
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Circle
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+# 4~15c 언저리
+Show 
+    Class == "Map Fragments"
+    BaseType == "Horned Scarab of Nemeses" "Harbinger Scarab" "Legion Scarab" "Legion Scarab of Officers" "Legion Scarab of Eternal Conflict" "Expedition Scarab of Runefinding" "Essence Scarab of Adaptation" "Essence Scarab of Ascent" "Ambush Scarab" "Harbinger Scarab of Warhoards" "Divination Scarab of The Cloister" "Harbinger Scarab of Regency" "Harvest Scarab of Doubling" "Blight Scarab of Invigoration" "Titanic Scarab of Treasures" "Abyss Scarab of Profound Depth" "Breach Scarab of Snares" "Cartography Scarab of the Multitude" "Ritual Scarab of Abundance" "Incursion Scarab of Timelines" "Sulphite Scarab of Greed" "Bestiary Scarab of Duplicating" "Horned Scarab of Nemeses"
+    SetFontSize 45
+    SetTextColor 255 248 231 255 #FFF8E7
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 35 49 45 245 #23312D
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Circle
+    CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+
+# 1~3c 언저리
+Show 
+    Class == "Map Fragments"
+    BaseType == "Titanic Scarab of Legend" "Divination Scarab of Plenty" "Titanic Scarab" "Ambush Scarab of Hidden Compartments" "Ambush Scarab of Potency" "Harbinger Scarab of Obelisks" "Legion Scarab of Command" "Expedition Scarab" "Expedition Scarab of Verisium Powder" "Expedition Scarab of Archaeology" "Essence Scarab" "Essence Scarab of Stability" "Scarab of Divinity" "Harvest Scarab" "Blight Scarab" "Blight Scarab of the Blightheart" "Abyss Scarab of Edifice" "Abyss Scarab" "Abyss Scarab of Multitudes" "Breach Scarab" "Breach Scarab of Resonant Cascade" "Breach Scarab of Lordship" "Breach Scarab of Splintering" "Ultimatum Scarab of Bribing" "Ultimatum Scarab of Inscription" "Ultimatum Scarab" "Delirium Scarab" "Delirium Scarab of Mania" "Delirium Scarab of Paranoia" "Delirium Scarab of Neuroses" "Delirium Scarab of Delusions" "Cartography Scarab of Risk" "Cartography Scarab of Escalation" "Domination Scarab" "Domination Scarab of Apparitions" "Domination Scarab of Evolution" "Ritual Scarab of Selectiveness" "Ritual Scarab of Wisps" "Betrayal Scarab" "Scarab of Adversaries" "Beyond Scarab of Resurgence" "Incursion Scarab of Invasion" "Betrayal Scarab of Intelligence" "Scarab of Hunted Traitors" "Influencing Scarab of the Shaper" "Incursion Scarab" "Incursion Scarab of Champions" "Sulphite Scarab" "Sulphite Scarab of Fumes" "Torment Scarab of Possession" "Torment Scarab" "Torment Scarab of Peculiarity" "Beyond Scarab" "Beyond Scarab of Haemophilia" "Beyond Scarab of Resurgence" "Beyond Scarab of the Invasion" "Betrayal Scarab of Reinforcements" "Bestiary Scarab of the Herd" "Influencing Scarab of the Elder" "Anarchy Scarab" "Anarchy Scarab of Gigantification" "Anarchy Scarab of Partnership" "Influencing Scarab of Conversion" "Scarab of Stability" "Scarab of Monstrous Lineage" "Scarab of Wisps" "Bestiary Scarab of the Herd" "Bestiary Scarab" "Influencing Scarab of Hordes" "Scarab of Radiant Storms" "Scarab of Bisection"
+    SetFontSize 45
+    SetTextColor 255 248 231 255 #FFF8E7
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 18 20 20 240 #121414
+    PlayEffect White
+    MinimapIcon 2 White Circle
 
 Show 
     Class == "Map Fragments"
     BaseType "Scarab"
     SetFontSize 45
-    SetTextColor 255 248 231 255 #FFF8E7
-    SetBorderColor 255 248 231 255 #FFF8E7
-    SetBackgroundColor 35 49 45 245 #23312D
-    PlayEffect Green Temp
-    MinimapIcon 2 Green Circle
+    SetTextColor 255 0 255 255 #FF00FF
+    SetBorderColor 255 0 255 255 #FF00FF
+    SetBackgroundColor 100 0 100 240 #640064
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
 
 # ================================================
 # 쉐이더, 엘더, 정복자 조각
@@ -4818,12 +4918,13 @@ Show
     Class == "Map Fragments"
     BaseType == "The Maven's Writ"
     SetFontSize 45
-    SetTextColor 208 240 192 255 #D0F0C0
-    SetBorderColor 208 240 192 255 #D0F0C0
-    SetBackgroundColor 0 0 0 240 #000000
-    MinimapIcon 1 White Hexagon
-    PlayEffect White
-    PlayAlertSound 2 300
+    SetTextColor 59 13 99 255 #3B0D63
+    SetBorderColor 59 13 99 255 #3B0D63
+    SetBackgroundColor 243 231 254 255 #F3E7FE
+    MinimapIcon 0 Red Star
+    PlayEffect Purple
+    PlayAlertSound 6 300
+    CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
 # ================================================
 # Gift to the Goddess 여신에게 바치는 선물
@@ -4901,7 +5002,7 @@ Show
 
 Show #default
     Class == "Divination Cards"
-    BaseType == "House of Mirrors" "Unrequited Love" "The Price of Devotion" "I See Brothers" "The Demon" "The Apothecary" "The Immortal" "The Insane Cat" "Choking Guilt" "The Doctor" "The Cheater" "Fire Of Unknown Origin" "The Fiend" "Brother's Gift" "Wealth and Power"
+    BaseType == "House of Mirrors" "Unrequited Love" "The Price of Devotion" "I See Brothers" "The Demon" "The Apothecary" "The Immortal" "The Insane Cat" "Choking Guilt" "The Doctor" "The Cheater" "Fire Of Unknown Origin" "The Fiend" "Brother's Gift" "Wealth and Power" "Father's Love"
     SetFontSize 45
     SetTextColor 0 73 83 255 #004953
     SetBorderColor 0 73 83 255 #004953
@@ -4918,7 +5019,7 @@ Show #default
 # Divine Justice 신성한 정의 장대한 파장(타락)
 Show #default
     Class == "Divination Cards"
-    BaseType == "The Endless Darkness" "Seven Years Bad Luck" "Luminous Trove" "Desecrated Virtue" "The Emptiness" "The Enlightened" "Love Through Ice" "The Samurai's Eye" "Home" "Auspicious Ambitions" "Gemcutter's Mercy" "The Gulf" "The Sephirot" "The Price of Loyalty" "Broken Promises" "Imperfect Memories" "Matryoshka" "The Nurse" "The Artist" "The Eye of Terror" "Divine Beauty" "A Fate Worse Than Death" "Duality" "The Chosen" "Brother's Stash" "Divine Justice"
+    BaseType == "The Endless Darkness" "Seven Years Bad Luck" "Luminous Trove" "Desecrated Virtue" "The Emptiness" "The Enlightened" "Love Through Ice" "The Samurai's Eye" "Home" "Auspicious Ambitions" "Gemcutter's Mercy" "The Gulf" "The Sephirot" "The Price of Loyalty" "Broken Promises" "Imperfect Memories" "Matryoshka" "The Nurse" "The Artist" "The Eye of Terror" "Divine Beauty" "A Fate Worse Than Death" "Duality" "The Chosen" "Brother's Stash" "Divine Justice" "Avian Pursuit"
     SetFontSize 45
     SetTextColor 9 90 71 255 #095A47
     SetBorderColor 9 90 71 255 #095A47
@@ -4934,7 +5035,7 @@ Show #default
 
 Show #default
     Class == "Divination Cards"
-    BaseType == "The Destination" "Monochrome" "The Dragon's Heart" "The Last One Standing" "Eternal Bonds" "The Damned" "The Shieldbearer" "Succor of the Sinless" "Who Asked" "Further Invention" "Remembrance" "The Greatest Intentions" "The Soul" "Altered Perception" "Magnum Opus" "The Bitter Blossom" "Winter's Embrace" "Bijoux" "Deadly Joy" "Fateful Meeting" "The Eternal War" "The Fortunate" "The Garish Power" "The Shortcut" "Darker Half" "Akil's Prophecy"
+    BaseType == "The Destination" "Monochrome" "The Dragon's Heart" "The Last One Standing" "Eternal Bonds" "The Damned" "The Shieldbearer" "Succor of the Sinless" "Who Asked" "Further Invention" "Remembrance" "The Greatest Intentions" "The Soul" "Altered Perception" "Magnum Opus" "The Bitter Blossom" "Winter's Embrace" "Bijoux" "Deadly Joy" "Fateful Meeting" "The Eternal War" "The Fortunate" "The Garish Power" "The Shortcut" "Darker Half" "Akil's Prophecy" "Temperance" "Lonely Warrior" 
     SetFontSize 45
     SetTextColor 9 90 71 255 #095A47
     SetBorderColor 9 90 71 255 #095A47
@@ -4961,7 +5062,7 @@ Show #highEnd
 
 Show #highEnd
     Class == "Divination Cards"
-    BaseType == "Prometheus' Armoury" "Assassin's Gift" "Echoes of Love" "Something Dark" "The Craving" "The Eldritch Decay" "The Enthusiasts" "The Forgotten Treasure" "The Primordial" "The Shepherd's Sandals" "A Familiar Call" "The Progeny of Lunaris" "Beauty Through Death" "Silence and Frost" "The Mad King" "The World Eater" "The Astromancer" "Costly Curio" "Gift of Asenath" "Unchained" "The Awakened" "Arrogance of the Vaal" "Misery in Darkness" "The Leviathan" "The Prince of Darkness" "Lachrymal Necrosis" "The Long Con" "The Patient" "A Modest Request" "Brotherhood in Exile" "The Old Man" "The Dungeon Master" "A Chilling Wind" "A Stone Perfected" "Alluring Bounty" "Brush, Paint and Palette" "Burning Blood" "Dementophobia" "Draped in Dreams" "Etched in Blood" "Mawr Blaidd" "Nook's Crown" "Rebirth and Renewal" "The Academic" "The Aspirant" "The Fishmonger" "The Fox in the Brambles" "The Hive of Knowledge" "The One That Got Away" "The Rabbit's Foot" "The Scout" "Lethean Temptation"
+    BaseType == "Prometheus' Armoury" "Assassin's Gift" "Echoes of Love" "The Craving" "The Eldritch Decay" "The Enthusiasts" "The Forgotten Treasure" "The Primordial" "The Shepherd's Sandals" "A Familiar Call" "The Progeny of Lunaris" "Beauty Through Death" "Silence and Frost" "The Mad King" "The World Eater" "The Astromancer" "Costly Curio" "Gift of Asenath" "Unchained" "The Awakened" "Misery in Darkness" "The Leviathan" "The Prince of Darkness" "Lachrymal Necrosis" "The Long Con" "The Patient" "A Modest Request" "Brotherhood in Exile" "The Old Man" "The Dungeon Master" "A Chilling Wind" "A Stone Perfected" "Alluring Bounty" "Brush, Paint and Palette" "Burning Blood" "Dementophobia" "Draped in Dreams" "Etched in Blood" "Mawr Blaidd" "Nook's Crown" "Rebirth and Renewal" "The Academic" "The Aspirant" "The Fishmonger" "The Fox in the Brambles" "The Hive of Knowledge" "The One That Got Away" "The Rabbit's Foot" "The Scout" "Lethean Temptation"
     SetFontSize 45
     SetTextColor 3 40 45 255 #03282D
     SetBorderColor 3 40 45 255 #03282D
@@ -4971,7 +5072,7 @@ Show #highEnd
     MinimapIcon 0 Yellow Cross #highEnd
 
 # ================================================
-# 4 티어 점술 카드(10c~5c)
+# 4 티어 점술 카드(6c~10c)
 # ================================================
 
 # The Hook 갈고리/8 21레벨 23퀄리티 변성 젬
@@ -4979,99 +5080,73 @@ Show #highEnd
 # The Magma Crab 마그마 게 21레벨 바알 용암 방패
 Show #highEnd
     Class == "Divination Cards"
-    BaseType == "Doryani's Epiphany" "The Magma Crab"
+    BaseType == "Doryani's Epiphany" "The Magma Crab" "The Hook"
     SetFontSize 45
     SetTextColor 240 255 255 255 #F0FFFF
     SetBorderColor 240 255 255 255 #F0FFFF
     SetBackgroundColor 31 129 124 240 #1F817C
 
-
 Show #highEnd
     Class == "Divination Cards"
-    BaseType == "The Vast" "Bowyer's Dream" "Chasing Risk" "Justified Ambition" "The Cursed King" "The Jester" "The White Knight" "Void of the Elements" "The Enforcer" "Judging Voices" "Audacity" "A Dusty Memory" "Azyran's Reward" "Deathly Designs" "Dying Light"  "The Strategist" "The Tumbleweed" "The Undisputed" "From Bone to Ashes"  "The Siren" "Tranquillity" "Underground Forest" "Abandoned Wealth" "Keeper's Corruption" "The Deal" "The Last Supper" "The Throne" "Ambitious Obsession" "Chaotic Disposition" "Dark Dreams" "Demigod's Wager" "Dialla's Subjugation" "Guardian's Challenge" "Harmony of Souls" "Light and Truth" "Pride Before the Fall" "Pride of the First Ones" "Rebirth" "The Body" "The Brawny Battle Mage" "The Celestial Stone" "The Conduit" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Eye of the Dragon" "The Finishing Touch" "The Landing" "The Price of Prescience" "The Return of the Rat" "The Risk" "The Road to Power" "The Rusted Bard" "The Seeker" "The Skeleton" "The Spoiled Prince" "The Unexpected Prize" "The Warlord" "The Wedding Gift"
+    BaseType == "Something Dark"
     SetFontSize 45
     SetTextColor 240 255 255 255 #F0FFFF
     SetBorderColor 240 255 255 255 #F0FFFF
     SetBackgroundColor 31 129 124 240 #1F817C
-
-# ================================================
-# 5 티어 점술 카드(5c~2c)
-# ================================================
-
-# The Void 공허/1 무작위 보상
-# The Realm 영역/5
-# The Blessing of Moosh 무쉬의 축복/4 21레벨 변성 젬
-Show #highEnd
-    Class == "Divination Cards"
-    BaseType == "The Void" "The Realm" "The Blessing of Moosh"
-    SetFontSize 45
-    SetTextColor 240 255 255 255 #F0FFFF
-    SetBorderColor 240 255 255 255 #F0FFFF
-    SetBackgroundColor 0 42 47 240 #002A2F
-    MinimapIcon 2 Grey Diamond
-
 
 # 서미누기 확인
+Show #highEnd 
+    Class == "Divination Cards"
+    BaseType == "Council of Cats" "The Life Thief"
+    SetFontSize 45
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 31 129 124 240 #1F817C
+
 Show #highEnd
     Class == "Divination Cards"
-    BaseType == "The King's Heart" "The Professor" "More is Never Enough" "The Wretched" "Last Hope" "The Whiteout"
+    BaseType == "The Vast" "Bowyer's Dream" "Chasing Risk" "Justified Ambition" "The Cursed King" "The Jester" "The White Knight" "Void of the Elements" "The Enforcer" "Judging Voices" "Audacity" "A Dusty Memory" "Azyran's Reward" "Deathly Designs" "Dying Light"  "The Strategist" "The Tumbleweed" "The Undisputed" "From Bone to Ashes"  "The Siren" "Tranquillity" "Underground Forest" "Abandoned Wealth" "Keeper's Corruption" "The Deal" "The Last Supper" "The Throne" "Ambitious Obsession" "Dark Dreams" "Demigod's Wager" "Dialla's Subjugation" "Guardian's Challenge" "Harmony of Souls" "Light and Truth" "Pride Before the Fall" "Pride of the First Ones" "Rebirth" "The Brawny Battle Mage" "The Celestial Stone" "The Conduit" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Eye of the Dragon" "The Finishing Touch" "The Landing" "The Price of Prescience" "The Return of the Rat" "The Risk" "The Road to Power" "The Rusted Bard" "The Seeker" "The Spoiled Prince" "The Unexpected Prize" "The Warlord" "The Wedding Gift" "Toxic Tidings" "The Queen" "Council of Cats" "The Life Thief"
     SetFontSize 45
-    SetTextColor 254 218 147 255 #FEDA93
-    SetBorderColor 254 218 147 255 #FEDA93
-    SetBackgroundColor 0 73 83 240 #004953
-
-Show #highEnd
-    Class == "Divination Cards"
-    BaseType == "The Breach" "Perfection" "A Mother's Parting Gift" "Anarchy's Price" "Call to the First Ones" "Checkmate" "Forbidden Power" "Haunting Shadows" "Hunter's Reward" "Merciless Armament" "Prejudice" "Sambodhi's Wisdom" "Soul Quenched" "The Avenger" "The Bear Woman" "The Cartographer" "The Catch" "The Deceiver" "The Fathomless Depths" "The Feast" "The Forward Gaze" "The Golden Era" "The Hale Heart" "The Hunger"  "The Lord of Celebration" "The Obscured" "The Polymath" "The Queen" "The Saint's Treasure" "The Side Quest" "The Undaunted" "Treasure Hunter" "Turn the Other Cheek" "Poisoned Faith" "Astral Protection" "Baited Expectations" "Boon of the First Ones" "Buried Treasure" "Council of Cats" "Desperate Crusade" "Eldritch Perfection" "Endless Night" "Lucky Deck" "Man With Bear"  "Parasitic Passengers" "Reckless Ambition" "Sambodhi's Vow" "The Admirer" "The Beast" "The Brittle Emperor" "The Cacophony" "The Cataclysm" "The Coming Storm" "The Darkest Dream" "The Dreamland" "The Easy Stroll" "The Formless Sea" "The Incantation"  "The Life Thief" "The Lord in Black" "The Master" "The Messenger" "The Oath" "The Offspring" "The Pact" "The Poet" "The Spark and the Flame" "The Thaumaturgist" "The Twilight Moon" "The Union"  "The Wind" "The Wolven King's Bite" "Triskaidekaphobia" "Alivia's Grace" "A Dab of Ink" "A Note in the Wind" "Death" "Disdain" "Ever-Changing" "Gift of the Gemling Queen" "Heterochromia"  "Lingering Remnants" "The Card Sharp" "The Insatiable"  "The Journey" "The Mercenary" "The Mind's Eyes" "The Offering" "The Pack Leader" "The Price of Protection"  "The Transformation" "The Tyrant" "The Valkyrie" "The Wolf's Legacy"  "Vanity" "Vile Power" "Vinia's Token" "The Wilted Rose"
-    SetFontSize 45
-    SetTextColor 254 218 147 255 #FEDA93
-    SetBorderColor 254 218 147 255 #FEDA93
-    SetBackgroundColor 0 73 83 240 #004953
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 31 129 124 240 #1F817C
 
 # ================================================
-# 6 티어(그 외) 티어 점술 카드(1c)
+# 특정 고유 아이템
 # ================================================
 
-# Dying Anguish 죽음의 비통함/8 19레벨 변성 젬, 퀄리티: +19%
-# Terrible Secret of Space 우주의 끔찍한 비밀/8 21레벨 변성 골렘 젬
+# The One With All 만인과 함께하는 자/6 (만인의 르-흐프 타락)
+# The Avenger 복수자/12 (묠니르 타락)
+# The Polymath 박식가/3 (별의 보석)
+# Poisoned Faith 독을 품은 믿음/8 (아라칼리의 송곳니 타락)
+# The Formless Sea 무형의 바다/7 (바루나스트라)
+# The Offspring 자손/9 (리슬라사의 감개)
+# The Spark and the Flame 불꽃과 화염/2 (베렉의 유예)
+# The Escape 탈주 (바람의 걸음)
+# The Thaumaturgist 마석학자/8 (샤브론의 계시 타락)
+# A Dab of Ink/9 약간의 잉크/9 (시인의 펜)
+# A Note in the Wind 바람 속의 기록/4 (아세나스의 징표)
 Hide #end
     Class == "Divination Cards"
-    BaseType == "Dying Anguish" "Terrible Secret of Space"
+    BaseType == "The One With All" "The Avenger" "The Polymath" "The Queen" "Poisoned Faith" "The Formless Sea" "The Offspring" "The Escape" "The Thaumaturgist" "A Dab of Ink"
     SetFontSize 45
-    SetTextColor 240 255 255 255 #F0FFFF
-    SetBorderColor 240 255 255 255 #F0FFFF
-    SetBackgroundColor 0 42 47 240 #002A2F
+    SetTextColor 255 228 247 255 #FFE4F7
+    SetBorderColor 255 228 247 255 #FFE4F7
+    SetBackgroundColor 31 129 124 240 #1F817C
 
-
-# Azure Rage 담청색 격노/4 (지도 등급: 16)
-# The Surveyor 측량사/4 (지도 등급:  14)
-# The Trial 시험/7 (지도 등급: 15 타락)
-# Lost Worlds 잃어버린 세계/8 (지도 등급:  15)
-
-Hide #end
+# The Scavenger 시체 청소부/8 (시체 상인)
+# The Sun 태양/7 (불사조의 비상)
+# Time-Lost Relic 오래된 유물/10 (리그 전용 아이템)
+# Haunting Shadows 출몰하는 그림자
+# The Coming Storm 다가오는 태풍/8 (번개 도선)
+# Vanity 자만심/9 (타뷸라 라사 타락)
+Hide #mid
     Class == "Divination Cards"
-    BaseType == "Azure Rage" "The Surveyor" "The Trial" "Lost Worlds" "Volatile Power"
+    BaseType == "The Scavenger" "The Sun" "Haunting Shadows" "The Deceiver" "The Coming Storm"
     SetFontSize 45
-    SetTextColor 240 255 255 255 #F0FFFF
-    SetBorderColor 240 255 255 255 #F0FFFF
-    SetBackgroundColor 0 42 47 240 #002A2F
-
-Hide #end
-    Class == "Divination Cards"
-    BaseType == "Cameria's Cut" "Atziri's Arsenal"  "Acclimatisation" "Alone in the Darkness" "Blind Venture" "Boundless Realms" "Broken Truce" "Cartographer's Delight" "Coveted Possession" "Cursed Words" "Gemcutter's Promise" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Jack in the Box"  "Left to Fate"  "Lysah's Respite" "No Traces" "Prosperity" "Rain Tempter" "Rats" "Scholar of the Seas" "Society's Remorse" "Struck by Lightning"  "The Aesthete" "The Archmage's Right Hand" "The Army of Blood" "The Betrayal" "The Cache" "The Calling" "The Carrion Crow"  "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Fletcher"  "The Fox" "The Gambler" "The Gemcutter" "The Gentleman"  "The Harvester"  "The Inoculated" "The Inventor" "The Lich" "The Lion"  "The Lunaris Priestess" "The Master Artisan" "The Mountain" "The One With All" "The Opulent" "The Rabid Rhoa" "The Scavenger"  "The Sigil"  "The Stormcaller" "The Summoner" "The Sun" "The Surgeon" "The Survivalist" "The Tinkerer's Table" "The Tower" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wolf's Shadow" "The Wolverine"  "Thunderous Skies" "Time-Lost Relic" 
-    SetFontSize 45
-    SetTextColor 240 255 255 255 #F0FFFF
-    SetBorderColor 240 255 255 255 #F0FFFF
-    SetBackgroundColor 0 42 47 240 #002A2F
-
-# 서미누기 확인(최하 티어)
-Hide #early
-    Class == "Divination Cards"
-    BaseType == "The Endurance" "The Puzzle" "The Lover" "Lantador's Lost Love" "The Scarred Meadow" "Thirst for Knowledge" "Earth Drinker" "The Catalyst" "The King's Blade" "Might is Right" "The Adventuring Spirit" "The Sword King's Salute" "Boon of Justice" "The Scholar" "The Forsaken" "The Rite of Elements" "The Witch" "The Hermit" "The Penitent" "Destined to Crumble" "Hunter's Resolve" "Mitts" "The Twins" "The Journalist" "The Bones" "The Doppelganger" "The Traitor" "The Blazing Fire" "Three Voices" "The Standoff" "The Arena Champion" "Doedre's Madness" "The Wolf" "The Ruthless Ceinture" "The Battle Born" "Dark Temptation" "Assassin's Favour" "Glimmer of Hope" "The Gladiator" "Shard of Fate" "The Metalsmith's Gift"
-    SetFontSize 45
-    SetTextColor 240 255 255 255 #F0FFFF
-    SetBorderColor 240 255 255 255 #F0FFFF
-    SetBackgroundColor 0 42 47 240 #002A2F
+    SetTextColor 255 228 247 255 #FFE4F7
+    SetBorderColor 255 228 247 255 #FFE4F7
+    SetBackgroundColor 31 129 124 240 #1F817C
 
 # ================================================
 # 5~6연결(5링크, 6링크) 아이템 보상
@@ -5114,32 +5189,20 @@ Hide #mid
     SetBackgroundColor 31 129 124 240 #1F817C
 
 # ================================================
-# 특정 아이템 및 그 외 카드
-# ================================================
-
-# "The Escape" 탈주 = 바람의 걸음
-Show #highEnd
-    Class == "Divination Cards"
-    BaseType == "The Escape"
-    SetFontSize 45
-    SetTextColor 240 255 255 255
-    SetBorderColor 240 255 255 255
-    SetBackgroundColor 31 129 124 240
-
-
-# ================================================
 # 화폐 보상
 # ================================================
-# The Heroic Shot 영웅적인 시도 17x 색채의 오브
-# The Wrath 진노/8 (카오스 오브x10)
-# The Hoarder 비축가/12 (엑잘티드 오브)
-# The Tireless Extractor 끈기 있는 추출자/8 (성유 x10)
-# The Innocent 결백한 자/10 (후회의 오브 x40)
+
 # Emperor's Luck 황제의 행운/5 (화폐 x5)
-# Parasitic Passengers 기생충 밥벌레/8 (인큐베이터 x10, 아이템 레벨: 84)
+# The Heroic Shot 영웅적인 시도 17x 색채의 오브
+# The Innocent 결백한 자/10 (후회의 오브 x40)
+# Chaotic Disposition 혼돈의 결정/1 (카오스 오브 x5)
+# The Cartographer 지도제작자/1 (지도제작자의 끌 x10)
+# The Saint's Treasure 성자의 보물/10 (엑잘티드 오브 x2)
+
+# 화폐 보상 highEnd
 Show #highEnd
     Class == "Divination Cards"
-    BaseType == "The Heroic Shot" "The Wrath" "The Hoarder" "The Tireless Extractor" "The Innocent" "Parasitic Passengers"
+    BaseType == "Emperor's Luck" "The Heroic Shot" "The Innocent" "Chaotic Disposition" "The Saint's Treasure" "The Transformation"
     SetFontSize 45
     SetTextColor 254 218 147 255 #FEDA93
     SetBorderColor 254 218 147 255 #FEDA93
@@ -5151,15 +5214,109 @@ Show #highEnd
 # Lucky Connections 행운의 연결/7 (연결의 오브 x20)
 # The Fool 어리석은 자/4 (기회의 오브 x20)
 # A Sea of Blue 푸른색의 바다/3 (변화의 오브 x13)
-Hide #mid
+# Acclimatisation 순응/2 (변화의 오브 x20)
+# No Traces 흔적 없음/9 (정제의 오브 x30)
+# The Inventor 발명가/6 (바알의 오브 x10)
+# The Survivalist 생존주의자/3 (연금술의 오브 x7)
+# The Tinkerer's Table 땜장이의 작업대/5 (화석 x5)
+# The Wrath 진노/8 (카오스 오브x10)
+# The Hoarder 비축가/12 (엑잘티드 오브)
+# The Tireless Extractor 끈기 있는 추출자/8 (성유 x10)
+# Society's Remorse 사회의 회환/1 (변화의 오트 x10)
+# The Union 결합/7 (세공사의 프리즘/10)
+# Ever-Changing 변화무쌍/3 (취소의 오브 x10)
+# Vinia's Token 비니아의 증표/5 (후회의 오브 x10)
+# 화폐 보상 end
+Hide #end
     Class == "Divination Cards"
-    BaseType == "Three Faces in the Dark" "Rain of Chaos" "Loyalty" "Lucky Connections" "The Fool" "A Sea of Blue"
+    BaseType == "Three Faces in the Dark" "Rain of Chaos" "Loyalty" "Lucky Connections" "The Fool" "A Sea of Blue" "Acclimatisation" "No Traces" "The Inventor" "The Survivalist" "The Wrath" "The Hoarder" "The Tireless Extractor" "Society's Remorse" "The Union" "Ever-Changing" "Vinia's Token"
     SetFontSize 45
     SetTextColor 254 218 147 255 #FEDA93
     SetBorderColor 254 218 147 255 #FEDA93
     SetBackgroundColor 0 73 83 240 #004953
-    
 
+# The Master Artisan 장인/5 (퀄리티 화폐 x20)
+# Parasitic Passengers 기생충 밥벌레/8 (인큐베이터 x10, 아이템 레벨: 84)
+# 화폐 보상 mid
+Hide #mid
+    Class == "Divination Cards"
+    BaseType == "The Master Artisan" "Parasitic Passengers"
+    SetFontSize 45
+    SetTextColor 254 218 147 255 #FEDA93
+    SetBorderColor 254 218 147 255 #FEDA93
+    SetBackgroundColor 0 73 83 240 #004953
+
+# ================================================
+# 5 티어 점술 카드(약2~5c)
+# ================================================
+
+# The Void 공허/1 무작위 보상
+# The Realm 영역/5
+# The Blessing of Moosh 무쉬의 축복/4 21레벨 변성 젬
+Show #highEnd
+    Class == "Divination Cards"
+    BaseType == "The Void" "The Realm" "The Blessing of Moosh" 
+    SetFontSize 45
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 0 42 47 240 #002A2F
+    MinimapIcon 2 Grey Diamond
+
+# 서미누기 확인
+Hide #end
+    Class == "Divination Cards"
+    BaseType == "The King's Heart" "The Professor" "More is Never Enough" "The Wretched" "Last Hope" "The Whiteout" "Arrogance of the Vaal" "Desperate Crusade" "Sambodhi's Vow" "The Offering" "The Breach" "Perfection" "Anarchy's Price" "Checkmate" "Forbidden Power" "Hunter's Reward" "Merciless Armament" "Prejudice" "Sambodhi's Wisdom" "The Catch" "The Forward Gaze" "The Hale Heart" "The Undaunted" "Treasure Hunter" "Baited Expectations" "Boon of the First Ones" "Eldritch Perfection" "Endless Night" "Lucky Deck" "Reckless Ambition" "The Admirer" "The Brittle Emperor" "The Cacophony" "The Lord in Black" "The Messenger" "The Twilight Moon" "Triskaidekaphobia" "The Mind's Eyes" "The Wolf's Legacy" "The Wilted Rose"
+    SetFontSize 45
+    SetTextColor 254 218 147 255 #FEDA93
+    SetBorderColor 254 218 147 255 #FEDA93
+    SetBackgroundColor 0 73 83 240 #004953
+
+# ================================================
+# 최하 티어, 6 티어 점술 카드(약 1c)
+# ================================================
+
+# Dying Anguish 죽음의 비통함/8 19레벨 변성 젬, 퀄리티: +19%
+# Terrible Secret of Space 우주의 끔찍한 비밀/8 21레벨 변성 골렘 젬
+Hide #end
+    Class == "Divination Cards"
+    BaseType == "Dying Anguish" "Terrible Secret of Space"
+    SetFontSize 45
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 0 42 47 240 #002A2F
+
+# Lingering Remnants 지속되는 유물/16 (바알 사원)
+# The Price of Protection 보호의 대가/5 (엘더 가디언 지도 등급: 14~16 8모드)
+Show #highEnd
+    Class == "Divination Cards"
+    BaseType == "Lingering Remnants" "The Price of Protection"
+    SetFontSize 45
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 0 42 47 240 #002A2F
+
+# Azure Rage 담청색 격노/4 (지도 등급: 16)
+# The Surveyor 측량사/4 (지도 등급:  14)
+# The Trial 시험/7 (지도 등급: 15 타락)
+# Lost Worlds 잃어버린 세계/8 (지도 등급:  15)
+# Left to Fate 운명에 맡기다/4 (지도 등급: 16 미확인 타락)
+# The Easy Stroll 편안한 산책/2 (지도 등급: 15 8모드 타락)
+Hide #end
+    Class == "Divination Cards"
+    BaseType == "Azure Rage" "The Surveyor" "The Trial" "Lost Worlds" "Volatile Power" "Left to Fate" "The Easy Stroll"
+    SetFontSize 45
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 0 42 47 240 #002A2F
+
+# 서미누기 확인(최하 티어)
+Hide #mid
+    Class == "Divination Cards"
+    BaseType == "The Endurance" "The Puzzle" "The Lover" "Lantador's Lost Love" "The Scarred Meadow" "Thirst for Knowledge" "Earth Drinker" "The Catalyst" "The King's Blade" "Might is Right" "The Adventuring Spirit" "The Sword King's Salute" "Boon of Justice" "The Scholar" "The Forsaken" "The Rite of Elements" "The Witch" "The Hermit" "The Penitent" "Destined to Crumble" "Hunter's Resolve" "Mitts" "The Twins" "The Journalist" "The Bones" "The Doppelganger" "The Traitor" "The Blazing Fire" "Three Voices" "The Standoff" "The Arena Champion" "Doedre's Madness" "The Wolf" "The Ruthless Ceinture" "The Battle Born" "Dark Temptation" "Assassin's Favour" "Glimmer of Hope" "The Gladiator" "Shard of Fate" "The Metalsmith's Gift" "The Body" "The Skeleton" "The Valkyrie" "Cameria's Cut" "Atziri's Arsenal" "Alone in the Darkness" "Blind Venture" "Boundless Realms" "Broken Truce" "Cartographer's Delight" "Coveted Possession" "Cursed Words" "Gemcutter's Promise" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Jack in the Box" "Lysah's Respite" "Prosperity" "Rain Tempter" "Rats" "Scholar of the Seas" "Struck by Lightning" "The Aesthete" "The Archmage's Right Hand" "The Army of Blood" "The Betrayal" "The Cache" "The Calling" "The Carrion Crow" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Fletcher" "The Fox" "The Gambler" "The Gemcutter" "The Gentleman" "The Harvester" "The Inoculated" "The Lich" "The Lion" "The Lunaris Priestess" "The Mountain" "The Opulent" "The Rabid Rhoa" "The Sigil" "The Stormcaller" "The Summoner" "The Surgeon" "The Tower" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wolf's Shadow" "The Wolverine" "Thunderous Skies" "A Mother's Parting Gift" "Call to the First Ones" "The Bear Woman" "The Fathomless Depths" "The Feast" "The Golden Era" "The Hunger" "The Lord of Celebration" "The Obscured" "The Obscured" "The Side Quest" "Turn the Other Cheek" "Astral Protection" "Buried Treasure" "Man With Bear" "The Beast" "The Cataclysm" "The Darkest Dream" "The Dreamland" "The Incantation" "The Oath" "The Pact" "The Poet" "The Wind" "The Wolven King's Bite" "Alivia's Grace" "Death" "Disdain" "Gift of the Gemling Queen" "Heterochromia" "The Card Sharp" "The Insatiable" "The Journey" "The Mercenary" "The Pack Leader" "The Tyrant" "Vile Power"
+    SetFontSize 45
+    SetTextColor 240 255 255 255 #F0FFFF
+    SetBorderColor 240 255 255 255 #F0FFFF
+    SetBackgroundColor 0 42 47 240 #002A2F
 
 # 필터링 되지 않은 모든 점술 카드(이 필터에 보여선 안된다.)
 Show #default
@@ -5695,27 +5852,6 @@ Hide #end
 	SetBackgroundColor 0 0 0 255
     MinimapIcon 1 White Kite
 
-# Breach Ring 균열 반지
-Show #highEnd
-	ItemLevel >= 83
-	Class == "Rings"
-	BaseType == "Breach Ring"
-	SetFontSize 45
-	SetTextColor 219 103 231 255
-	SetBorderColor 219 103 231 255
-	SetBackgroundColor 0 0 0 255
-	MinimapIcon 1 Purple Pentagon #highEnd
-
-Hide #end
-	ItemLevel < 83
-	Class == "Rings"
-	BaseType == "Breach Ring"
-	SetFontSize 45
-	SetTextColor 219 103 231 255
-	SetBorderColor 219 103 231 255
-	SetBackgroundColor 0 0 0 255
-	#MinimapIcon 1 Purple Pentagon #end
-
 # ================================================
 # 복제된 파편과 복제된 영토
 # ================================================
@@ -5943,18 +6079,19 @@ Show #default
 	SetTextColor 247 247 247 255
 	SetBorderColor 58 168 193 255
 	SetBackgroundColor 47 118 134 240
+	PlayAlertSound 2 300
     PlayEffect Cyan Temp
 	MinimapIcon 1 Cyan Circle
 
 #절규하는
-Hide #end
+Show #highEnd
 	Class == "Stackable Currency"
 	BaseType "Screaming Essence of"
 	SetFontSize 45
 	SetTextColor 247 247 247 255
 	SetBorderColor 58 168 193 255
 	SetBackgroundColor 37 67 75 240
-    #MinimapIcon 2 Cyan Circle #end
+    # MinimapIcon 2 Cyan Circle #highEnd
 
 #속삭이는 불평하는 흐느끼는 울부짖는
 Hide #end
@@ -6335,17 +6472,17 @@ Show
 	MapTier >= 17
 	Class == "Maps"
 	Rarity != Unique
-    SetTextColor 184 123 238 255 #b87bee
-    SetBorderColor 184 123 238 255 #b87bee
-    SetBackgroundColor 22 2 40 240 #160228
+    SetTextColor 59 13 99 255 #3B0D63
+    SetBorderColor 59 13 99 255 #3B0D63
+    SetBackgroundColor 243 231 254 255 #F3E7FE
 	SetFontSize 45
 	PlayAlertSound 6 300
 	PlayEffect Purple
 	MinimapIcon 1 Purple Square
-	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
+	CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
 # 타락된 일반 지도 숨기기
-Hide #end
+Hide
     Corrupted True
 	Class == "Maps"
 	Rarity Normal
@@ -6354,14 +6491,18 @@ Hide #end
     SetBackgroundColor 17 17 17 240 #111111
 	SetFontSize 45
 
-Hide #end
+# 타락된 마법 희귀 지도
+Show 
     Corrupted True
 	Class == "Maps"
 	Rarity == Magic Rare
-    SetTextColor 240 240 240 255 #F0F0F0
-    SetBorderColor 233 30 99 255 #E91E63
-    SetBackgroundColor 17 17 17 240 #111111
+    SetTextColor 248 222 126 255 #F8DE7E
+    SetBorderColor 248 222 126 255 #F8DE7E
+    SetBackgroundColor 165 0 33 240 #A50021
 	SetFontSize 45
+	PlayAlertSound 5 300
+	PlayEffect Red
+	MinimapIcon 1 Red Square
 
 # 지도 14 이상
 Show
@@ -6417,9 +6558,9 @@ Show
     SetTextColor 255 216 0 255 #FFD800
     SetBorderColor 255 216 0 255 #FFD800
     SetBackgroundColor 18 15 0 240 #120F00
+	PlayAlertSound 4 300
 	PlayEffect Yellow Temp
 	MinimapIcon 1 Yellow Square
-	PlayAlertSound 4 300
 
 # # 타락 지도 1~5
 # Show
@@ -6449,9 +6590,9 @@ Show
     SetTextColor 240 240 240 255 #F0F0F0
     SetBorderColor 240 240 240 255 #F0F0F0
     SetBackgroundColor 17 17 17 240 #111111
+	PlayAlertSound 3 300
 	PlayEffect White Temp
 	MinimapIcon 1 White Square
-	PlayAlertSound 4 300
 
 # ================================================
 # ================================================
@@ -6608,6 +6749,7 @@ Show
 # ================================================
 # 탐험 일지
 # ================================================
+# 탐험 일지
 Show
 	Class == "Expedition Logbooks"
 	SetFontSize 45
@@ -6618,18 +6760,21 @@ Show
     PlayEffect Blue
     MinimapIcon 1 Blue Circle
 
+# 기억 비싼거
 Show # $type->exoticmap->memory $tier->t1
 	Class == "Memories"
 	BaseType == "Alva's Memory" "Einhar's Memory" "Kirac's Memory" "Niko's Memory"
 	HasExplicitMod >=1 "of Crystal Prisons" "of Harvest Beasts" "of the Sacred Grove"
 	SetFontSize 45
-	SetBorderColor 240 100 0 255
-	SetBackgroundColor 255 255 255 255
+    SetTextColor 43 4 52 255 #2B0434
+    SetBorderColor 43 4 52 255 #2B0434
+    SetBackgroundColor 200 178 205 240 #C8B2CD
 	CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
-Show # $type->exoticmap->memory $tier->any
+# 기억
+Show 
 	Class == "Memories"
 	BaseType == "Alva's Memory" "Einhar's Memory" "Kirac's Memory" "Niko's Memory"
 	SetFontSize 45
@@ -6640,6 +6785,7 @@ Show # $type->exoticmap->memory $tier->any
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow UpsideDownHouse
 
+# 성역 아이템
 Show # $type->exoticmap->sanctum $tier->any
 	Class == "Sanctum Research"
 	SetFontSize 45
