@@ -205,7 +205,7 @@ Show
     MinimapIcon 0 Green Kite
 
 # 팅크 테스트
-Show #highEnd
+Hide #highEnd
     ItemLevel >= 85
     Class == "Tinctures"
     BaseType == "Prismatic Tincture" "Rosethorn Tincture"
@@ -217,7 +217,7 @@ Show #highEnd
     PlayEffect Green Temp
 
 # 팅크
-Show #end
+Hide #end
     Class == "Tinctures"
     SetFontSize 45
     SetTextColor 2 42 12 255 #022A0C
@@ -743,14 +743,14 @@ Show #uber
     SetBackgroundColor 26 71 95 240 #1A475F
     MinimapIcon 1 Yellow Circle #uber
 
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Harbinger's Shard"
     SetFontSize 45
     SetTextColor 255 248 231 255 #FFF8E7
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 26 71 95 240 #1A475F
-    MinimapIcon 1 Yellow Circle #highEnd
+    #MinimapIcon 1 Yellow Circle #highEnd
 
 # 카드 묶음, 장막의 갑충석
 Show #default
@@ -834,14 +834,14 @@ Show #default
     MinimapIcon 2 Yellow Circle
     
 # 제왕의 파편
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Regal Shard"
     SetFontSize 45
     SetTextColor 230 220 178 255 #E6DCB2
     SetBorderColor 230 220 178 255 #E6DCB2
     SetBackgroundColor 37 53 116 240 #253574
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 카오스 오브
 Show #default
@@ -915,14 +915,14 @@ Show #uber
     SetBackgroundColor 27 27 27 240 #1B1B1B
     MinimapIcon 2 White Circle #uber
 
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Blessed Orb"
     SetFontSize 45
     SetTextColor 248 222 126 255 #F8DE7E
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 27 27 27 240 #1B1B1B
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 지평의 오브
 Show #uber
@@ -936,34 +936,34 @@ Show #uber
     MinimapIcon 1 White Circle #uber
 
 # 지평의 오브
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Orb of Horizons"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 132 137 85 240 #848955
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 주입의 오브(조건부 사용 효과)
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Instilling Orb"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 143 118 179 240 #8F76B3
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 자극의 오브
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Enkindling Orb"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 184 182 114 240 #B8B672
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # ================================================
 # Orb of Binding 속박의 오브 
@@ -981,7 +981,7 @@ Show #uber
     SetBackgroundColor 27 27 27 240 #1B1B1B
     MinimapIcon 1 White Circle #uber
 
-Show #highEnd
+Hide #highEnd
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Orb of Binding" "Orb of Alchemy"
@@ -989,16 +989,16 @@ Show #highEnd
     SetTextColor 248 222 126 255 #F8DE7E
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 27 27 27 240 #1B1B1B
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Orb of Binding" "Orb of Alchemy"
     SetFontSize 45
     SetTextColor 248 222 126 255 #F8DE7E
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 27 27 27 240 #1B1B1B
-    MinimapIcon 1 White Circle #end
+    #MinimapIcon 1 White Circle #end
 
 # ================================================
 # 소켓 화폐
@@ -1019,7 +1019,7 @@ Show #uber
     SetBackgroundColor 254 254 250 240 #FEFEFA
     MinimapIcon 1 White Circle #uber
 
-Show #highEnd
+Hide #highEnd
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Orb of Fusing"
@@ -1027,17 +1027,17 @@ Show #highEnd
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 254 254 250 240 #FEFEFA
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 연결의 오브
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Orb of Fusing"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 254 254 250 240 #FEFEFA
-    MinimapIcon 2 White Circle #end
+    #MinimapIcon 2 White Circle #end
 
 # 색채의 오브
 Show #uber
@@ -1051,7 +1051,7 @@ Show #uber
     MinimapIcon 1 White Circle #uber
 
 # 색채의 오브
-Show #highEnd
+Hide #highEnd
     StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Chromatic Orb"
@@ -1059,17 +1059,17 @@ Show #highEnd
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 159 193 49 240 #9FC131
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 색채의 오브
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Chromatic Orb"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 159 193 49 240 #9FC131
-    MinimapIcon 2 White Circle #end
+    #MinimapIcon 2 White Circle #end
 
 # 쥬얼러 오브
 Show #uber
@@ -1083,7 +1083,7 @@ Show #uber
     MinimapIcon 1 White Circle #uber
 
 # 쥬얼러 오브
-Show #highEnd
+Hide #highEnd
     StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Jeweller's Orb"
@@ -1091,17 +1091,17 @@ Show #highEnd
     SetTextColor 170 158 130 255 #AA9E82
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 0 0 0 240 #000000
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 쥬얼러 오브
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Jeweller's Orb" 
     SetFontSize 45
     SetTextColor 170 158 130 255 #AA9E82
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 0 0 0 240 #000000
-    MinimapIcon 2 White Circle #end
+    #MinimapIcon 2 White Circle #end
 
 # ================================================
 # Orb of Alteration 변화의 오브
@@ -1118,7 +1118,7 @@ Show #uber
     SetBackgroundColor 102 153 204 240 #6699CC
     MinimapIcon 2 White Circle #uber
 
-Show #highEnd
+Hide #highEnd
     StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Orb of Alteration" 
@@ -1126,16 +1126,16 @@ Show #highEnd
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 102 153 204 240 #6699CC
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Orb of Alteration" 
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 102 153 204 240 #6699CC
-    MinimapIcon 2 White Circle #end
+    #MinimapIcon 2 White Circle #end
 
 # ================================================
 # 기회의 오브는 정제의 오브와 함께
@@ -1144,7 +1144,7 @@ Show #end
 # Orb of Chance 기회의 오브 
 # ================================================
     
-Show #highEnd
+Hide #highEnd
     StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Orb of Chance"
@@ -1152,10 +1152,10 @@ Show #highEnd
     SetTextColor 170 158 130 255 #AA9E82
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 40 15 1 240 #280F01
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 기회의 오브
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Orb of Chance"
     SetFontSize 45
@@ -1184,14 +1184,14 @@ Show #uber
     MinimapIcon 2 White Circle #uber
 
 # 유리직공의 방울
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Glassblower's Bauble"
     SetFontSize 45
     SetTextColor 175 217 200 255 #AFD9C8
     SetBorderColor 175 217 200 255 #AFD9C8
     SetBackgroundColor 51 61 14 240 #333D0E
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 지도제작자의 끌
 Show #uber
@@ -1204,21 +1204,21 @@ Show #uber
     MinimapIcon 2 White Circle #uber
 
 # 기술자의 오브 
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Engineer's Orb"
     SetFontSize 45
     SetTextColor 170 158 130 255 #AA9E82
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 40 15 1 240 #280F01
-    MinimapIcon 2 White Circle #end
+    #MinimapIcon 2 White Circle #end
 
 # ================================================	
 # 중첩 가능 화폐 그 외 파편
 # ================================================	
 
 # 기술자의 파편
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Engineer's Shard"
     SetFontSize 45
@@ -1227,7 +1227,7 @@ Show #highEnd
     SetBackgroundColor 27 27 27 240 #1B1B1B
 
 # 속박의 파편, 연금술의 파편
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Alchemy Shard" "Binding Shard"
     SetFontSize 45
@@ -1236,7 +1236,7 @@ Show #highEnd
     SetBackgroundColor 27 27 27 240 #1B1B1B
 
 # 지평의 파편
-Show #highEnd
+Hide #highEnd
     Class == "Stackable Currency"
     BaseType == "Horizon Shard"
     SetFontSize 45
@@ -1245,7 +1245,7 @@ Show #highEnd
     SetBackgroundColor 132 137 85 240 #848955
 
 # 변화의 파편
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Alteration Shard"
     SetFontSize 45
@@ -1269,7 +1269,7 @@ Hide #starter
 # ================================================
 
 # 대장장이의 숫돌과 방어구 장인의 고철
-Show #highEnd
+Hide #highEnd
     StackSize >= 4
     Class == "Stackable Currency"
     BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -1278,7 +1278,7 @@ Show #highEnd
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 16 12 8 240 #100C08
 
-Show #end
+Hide #end
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -1287,7 +1287,7 @@ Show #end
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 16 12 8 240 #100C08
 
-Show #mid
+Hide #mid
     Class == "Stackable Currency"
     BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
     SetFontSize 45
@@ -1305,7 +1305,7 @@ Show #mid
 # ================================================
 
 # 확장의 오브 스택
-Show #highEnd
+Hide #highEnd
     StackSize >= 6
     Class == "Stackable Currency"
     BaseType == "Orb of Augmentation" 
@@ -1314,7 +1314,7 @@ Show #highEnd
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 40 15 1 240 #280F01
 
-Show #end
+Hide #end
     StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Orb of Augmentation" 
@@ -1324,7 +1324,7 @@ Show #end
     SetBackgroundColor 40 15 1 240 #280F01
 
 # 확장의 오브
-Show #mid
+Hide #mid
     Class == "Stackable Currency"
     BaseType == "Orb of Augmentation" 
     SetFontSize 45
@@ -1333,7 +1333,7 @@ Show #mid
     SetBackgroundColor 40 15 1 240 #280F01
 
 # 진화의 오브
-Show #highEnd
+Hide #highEnd
     StackSize >= 6
     Class == "Stackable Currency"
     BaseType == "Orb of Transmutation"
@@ -1342,7 +1342,7 @@ Show #highEnd
     SetBorderColor 255 239 213 255 #FFEFD5
     SetBackgroundColor 0 0 0 240 #000000
 
-Show #end
+Hide #end
     StackSize >= 3
     Class == "Stackable Currency"
     BaseType == "Orb of Transmutation"
@@ -1351,7 +1351,7 @@ Show #end
     SetBorderColor 255 239 213 255 #FFEFD5
     SetBackgroundColor 0 0 0 240 #000000
 
-Show #mid
+Hide #mid
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Orb of Transmutation"
@@ -1360,7 +1360,7 @@ Show #mid
     SetBorderColor 255 239 213 255 #FFEFD5
     SetBackgroundColor 0 0 0 240 #000000
 
-Show #early
+Hide #early
     Class == "Stackable Currency"
     BaseType == "Orb of Transmutation"
     SetFontSize 45
@@ -1378,7 +1378,7 @@ Show #uber
     SetBorderColor 60 100 200 255 #3C64C8
     SetBackgroundColor 5 8 40 240 #050828
 
-Show #highEnd
+Hide #highEnd
     StackSize >= 6
     Class == "Stackable Currency"
     BaseType == "Portal Scroll" 
@@ -1387,7 +1387,7 @@ Show #highEnd
     SetBorderColor 60 100 200 255 #3C64C8
     SetBackgroundColor 5 8 40 240 #050828
 
-Show #end
+Hide #end
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Portal Scroll" 
@@ -1396,7 +1396,7 @@ Show #end
     SetBorderColor 60 100 200 255 #3C64C8
     SetBackgroundColor 5 8 40 240 #050828
 
-Show #early
+Hide #early
     Class == "Stackable Currency"
     BaseType == "Portal Scroll" 
     SetFontSize 45
@@ -1414,7 +1414,7 @@ Show #default
     SetBackgroundColor 5 8 40 240 #050828
 
 # Scroll of Wisdom 감정 주문서
-Show #end
+Hide #end
     StackSize >= 10
     Class == "Stackable Currency"
     BaseType == "Scroll of Wisdom"
@@ -1423,7 +1423,7 @@ Show #end
     SetBorderColor 200 100 60 255 #C8643C
     SetBackgroundColor 30 5 5 240 #1E0505
 
-Show #early
+Hide #early
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Scroll of Wisdom"
@@ -1482,7 +1482,7 @@ Show #uber
 # Blighted Scouting Report 역병 걸린 정찰 보고서 5.0c
 # Delirious Scouting Report 환영의 정찰 보고서 5.0c
 # Singular Scouting Report 비범한 정찰 보고서 4.0c
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType == "Influenced Scouting Report" "Operative's Scouting Report" "Blighted Scouting Report" "Delirious Scouting Report" "Singular Scouting Report"
 	SetFontSize 45
@@ -1490,11 +1490,11 @@ Show #highEnd
     SetBorderColor 0 0 0 255 #000000
     SetBackgroundColor 87 117 96 240 #577560
 	PlayEffect White
-	MinimapIcon 1 White Cross #highEnd
+	#MinimapIcon 1 White Cross #highEnd
 
 # Explorer's Scouting Report 탐험가의 정찰 보고서 1.0c
 # Vaal Scouting Report 바알 정찰 보고서 1.0c
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType == "Explorer's Scouting Report" "Vaal Scouting Report"
 	SetFontSize 45
@@ -1637,7 +1637,7 @@ Show #default
 	MinimapIcon 0 Red Star
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType "Omen of the Jeweller" "Omen of Brilliance"
 	SetFontSize 45
@@ -1646,10 +1646,10 @@ Show #highEnd
 	SetBackgroundColor 92 55 24 255 #5C3718
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 0 Yellow Cross #highEnd
+	#MinimapIcon 0 Yellow Cross #highEnd
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
-Show #end
+Hide #end
 	Class == "Stackable Currency"
 	BaseType "Omen of Adrenaline" "Omen of Death's Door" "Omen of Death-dancing" "Omen of Refreshment" "Omen of Return" "Omen of the Soul Devourer"
 	SetFontSize 45
@@ -1660,7 +1660,7 @@ Show #end
 	PlayEffect Yellow temp
 
 # 그 외 가치 없는 징조들
-Show #mid
+Hide #mid
 	Class == "Stackable Currency"
 	BaseType "Omen of"
 	SetFontSize 45
@@ -1710,9 +1710,9 @@ Show #uber
 	SetBackgroundColor 89 38 11 204
     PlayAlertSound 2 300
     PlayEffect Brown Temp
-    MinimapIcon 1 Brown Circle #highEnd
+    #MinimapIcon 1 Brown Circle #highEnd
 
-Show #highEnd
+Hide #highEnd
 	StackSize < 150
 	Class == "Stackable Currency"
 	BaseType == "Rogue's Marker"
@@ -2011,7 +2011,7 @@ Show #default
 	PlayEffect Blue
 	MinimapIcon 1 Blue Diamond
 
-Show #end
+Hide #end
 	Identified True
 	HasExplicitMod "Veiled" "of the Veil"
 	SetFontSize 45
@@ -2085,7 +2085,7 @@ Show #default
 # ================================================
 
 # 명계의 조임쇠, 수정 허리띠
-Show #highEnd
+Hide #highEnd
 	ItemLevel >= 84
 	Rarity == Normal Magic Rare
 	Class "Belts"
@@ -2099,7 +2099,7 @@ Show #highEnd
 	MinimapIcon 1 White UpsideDownHouse 
 
 # 명계의 조임쇠, 수정 허리띠
-Show #end
+Hide #end
 	Class "Belts"
 	BaseType == "Stygian Vise" "Crystal Belt"
 	Rarity == Normal Magic Rare
@@ -2214,7 +2214,7 @@ Show #default
 # ================================================
 
 # 6링크 갑옷과 양손 무기
-Show #highEnd
+Hide #highEnd
 	LinkedSockets == 6
 	Class "Body Armours" "Bows" "Staves" "Warstaves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces"
 	Rarity != Unique
@@ -2224,10 +2224,10 @@ Show #highEnd
     SetBackgroundColor 255 235 238 240 #FFEBEE
 	PlayAlertSound 7 300
 	PlayEffect Red
-	MinimapIcon 0 Red UpsideDownHouse #end
+	#MinimapIcon 0 Red UpsideDownHouse #end
 
 # 5링크 갑옷과 양손 무기
-Show #end
+Hide #end
 	LinkedSockets == 5
 	Class "Body Armours" "Bows" "Staves" "Warstaves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces"
 	Rarity != Unique
@@ -2237,7 +2237,7 @@ Show #end
     SetBackgroundColor 239 222 205 240 #EFDECD
 	PlayAlertSound 2 300
 	PlayEffect Grey
-	MinimapIcon 1 Grey UpsideDownHouse #end
+	#MinimapIcon 1 Grey UpsideDownHouse #end
 
 # ================================================
 # 21 퀄리티 이상의 방어구.
@@ -2460,7 +2460,7 @@ Show
 	MinimapIcon 0 Red UpsideDownHouse
 
 # 모든 영향력 아이템
-Show #highEnd
+Hide #highEnd
 	HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
 	Corrupted False
 	Rarity == Rare
@@ -2472,7 +2472,7 @@ Show #highEnd
 	PlayEffect White Temp
 
 # 모든 영향력 아이템
-Show #highEnd
+Hide #highEnd
 	HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
 	Corrupted True
 	Rarity == Rare
@@ -2581,7 +2581,7 @@ Hide
 # 6홈 방어구(쥬얼러 벤더 레시피:쥬얼러 오브 x7)
 # ================================================
 
-Show #end
+Hide #end
 	Sockets == 6
 	Rarity != Unique
 	SetFontSize 45
@@ -2590,14 +2590,14 @@ Show #end
     SetBackgroundColor 105 105 105 240 #696969
 	PlayAlertSound 12 300
 	PlayEffect Grey
-	MinimapIcon 2 Grey UpsideDownHouse #end
+	#MinimapIcon 2 Grey UpsideDownHouse #end
 
 # ================================================
 # RGB 아이템(색채의 오브)
 # ================================================
 
 # 색채의 오브 벤더 레시피
-Show #early
+Hide #early
 	SocketGroup >= 3RGB
 	Rarity != Unique
 	Width <= 2
@@ -2622,7 +2622,7 @@ Hide #starter
 # ================================================
 
 # 활(잡목림, 척추, 성채)
-Show #highEnd
+Hide #highEnd
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2639,7 +2639,7 @@ Show #highEnd
 	PlayEffect Yellow Temp
 
 # 활(잡목림, 척추, 성채)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2655,7 +2655,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 활(마라케스, 제국, 선구자, 암살자, 레인저)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2671,7 +2671,7 @@ Show #mid
 	PlayEffect Yellow Temp
 
 # 화살통(무거운, 끔찍한, 원시, 포대, 넓은 촉, 쌍촉, 깃)
-Show #highEnd
+Hide #highEnd
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2688,7 +2688,7 @@ Show #highEnd
 	PlayEffect Yellow Temp
 
 # 화살통(무거운, 끔찍한, 원시, 포대, 넓은 촉, 쌍촉, 깃)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2704,7 +2704,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 화살통(무거운, 끔찍한, 원시, 포대, 넓은 촉, 쌍촉, 깃)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2720,7 +2720,7 @@ Show #mid
 	PlayEffect Yellow Temp
 
 # 클로(제국)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2736,7 +2736,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 클로(쌍생아, 눈 후비개)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2756,7 +2756,7 @@ Show #mid
 # ================================================
 
 # 양손 도끼(절대군주, 살점 거열기)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2772,7 +2772,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 양손 도끼(에조미어, 작렬하는, 바알, 공허의)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2792,7 +2792,7 @@ Show #mid
 # ================================================
 
 # 양손 검(에조미어, 정교한)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2808,7 +2808,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 양손 검(바알 대검, 지옥불 검)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2826,7 +2826,7 @@ Show #mid
 # ================================================
 # 양손 철퇴(고기 갈이개, 제국 대형, 공포의 대형, 광환의 대형) 
 # ================================================
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2841,7 +2841,7 @@ Show #end
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2861,7 +2861,7 @@ Show #mid
 # 전쟁 지팡이(에조미어, 마엘스트롬, 심판)
 # ================================================
 
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2876,7 +2876,7 @@ Show #end
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2891,7 +2891,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2907,7 +2907,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 마법봉(회오리, 오팔, 악마의 뿔)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2924,7 +2924,7 @@ Show #mid
 	PlayEffect Yellow Temp
 
 # 룬 단검(백금 크리스, 황금 크리스)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2940,7 +2940,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 룬 단검(악마 단검, 마귀 단검, 임프 단검)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2956,7 +2956,7 @@ Show #mid
 	PlayEffect Yellow Temp
 
 # 셉터(삼바,바알, 카루이)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2973,7 +2973,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 셉터(공허의, 육욕의, 오팔)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -2994,7 +2994,7 @@ Show #mid
 # ================================================
 
 # 힘,민첩(Str/Dex) 상위 방어구
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3010,7 +3010,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 힘,민첩(Str/Dex) 방어구
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3026,7 +3026,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #early
+Hide #early
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3043,7 +3043,7 @@ Show #early
 	PlayEffect Yellow Temp
 
 # 방패(최상급 가시, 거울 같은 가시, 고상한 원형, 선홍색 원형)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3059,7 +3059,7 @@ Show #end
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3080,7 +3080,7 @@ Show #mid
 # ================================================
 
 # 힘(Str) 상위 방어구
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3097,7 +3097,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 힘(Str) 방어구
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3113,7 +3113,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #early
+Hide #early
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3130,7 +3130,7 @@ Show #early
 	PlayEffect Yellow Temp
 
 # 힘, 지능(Str/Int) 상위 방어구
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3147,7 +3147,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 힘, 지능(Str/Int) 방어구
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3163,7 +3163,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #early
+Hide #early
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3180,7 +3180,7 @@ Show #early
 	PlayEffect Yellow Temp
 
 # 민첩(Dex) 상위 방어구
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3197,7 +3197,7 @@ Show #end
 	PlayEffect Yellow Temp
 
 # 민첩(Dex) 방어구
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3213,7 +3213,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow Temp
 
-Show #early
+Hide #early
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3230,7 +3230,7 @@ Show #early
 	PlayEffect Yellow Temp
 
 # 민첩, 지능(Dex/Int) 상위 방어구
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3247,7 +3247,7 @@ Show #end
 	PlayEffect Yellow 
 
 # 민첩, 지능(Dex/Int) 방어구
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3263,7 +3263,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
 
-Show #early
+Hide #early
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3280,7 +3280,7 @@ Show #early
 	PlayEffect Yellow 
 
 # 지능(Int) 상위 방어구
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3297,7 +3297,7 @@ Show #end
 	PlayEffect Yellow 
 
 # 지능(Int) 방어구
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3313,7 +3313,7 @@ Show #mid
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
 
-Show #early
+Hide #early
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3330,7 +3330,7 @@ Show #early
 	PlayEffect Yellow 
 
 # 방어도 방패(최고의 거대, 초대형 거대, 에조미어 거대, 에조미어 거대)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3346,7 +3346,7 @@ Show #end
 	PlayAlertSound 2 300
 	PlayEffect Yellow 
 
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3367,7 +3367,7 @@ Show #mid
 # ================================================
 
 # 반지(자수정, 분광, 무보석, 오팔, 강철, 주색, 진청색, 근청석, 이름 없는)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3384,7 +3384,7 @@ Show #end
 	PlayEffect Yellow 
 
 # 반지(자수정, 분광, 무보석, 오팔, 강철, 주색, 진청색, 근청석, 이름 없는)
-Show #mid
+Hide #mid
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3401,7 +3401,7 @@ Show #mid
 	PlayEffect Yellow 
 
 # 장신구(목걸이)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3417,7 +3417,7 @@ Show #end
 	PlayEffect Yellow 
 
 # 장신구(반지와 벨트)
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3444,7 +3444,7 @@ Show #end
 # Fossilised Spirit Shield 화석 영혼 방패
 # Bone Ring 뼈 반지
 # 소환수 마법봉, 방패, 반지
-Show #end
+Hide #end
 	HasInfluence None
 	Identified False
 	Mirrored False
@@ -3476,7 +3476,7 @@ Show #uber
 	MinimapIcon 2 Yellow UpsideDownHouse #uber
 
 # 균열 반지
-Show #highEnd
+Hide #highEnd
 	ItemLevel < 83
 	Class == "Rings"
 	BaseType == "Breach Ring"
@@ -3485,7 +3485,7 @@ Show #highEnd
     SetBorderColor 238 224 253 255 #EEE0FD
     SetBackgroundColor 25 3 48 240 #190330
 	# PlayAlertSound 1 300
-	MinimapIcon 2 Yellow UpsideDownHouse #highEnd
+	#MinimapIcon 2 Yellow UpsideDownHouse #highEnd
 
 
 
@@ -3494,7 +3494,7 @@ Show #highEnd
 # 제왕의 오브 벤더 레시피
 # ================================================
 
-Show #early
+Hide #early
 	HasInfluence None
 	ItemLevel >= 75
 	ItemLevel <= 100
@@ -3510,7 +3510,7 @@ Show #early
     SetBorderColor 255 248 230 255 #FFF8E6
     SetBackgroundColor 167 136 0 240 #A78800
 
-Show #early
+Hide #early
 	HasInfluence None
 	ItemLevel >= 75
 	ItemLevel <= 100
@@ -3530,7 +3530,7 @@ Show #early
 # ================================================
 
 # 장신구
-Show #early
+Hide #early
 	ItemLevel >= 60
 	ItemLevel <= 74
 	Identified False
@@ -3546,7 +3546,7 @@ Show #early
     SetBackgroundColor 207 181 59 240 #CFB53B
 
 # 무기와 방어구
-Show #early
+Hide #early
 	ItemLevel >= 60
 	ItemLevel <= 74
 	Identified False
@@ -3965,7 +3965,7 @@ Hide #starter
 # ================================================
 
 # 코발트색 주얼 희귀
-Show #highEnd
+Hide #highEnd
 	Class == "Jewel"
 	BaseType == "Cobalt Jewel" 
 	Rarity == Rare
@@ -3975,7 +3975,7 @@ Show #highEnd
     SetBackgroundColor 10 40 104 240 #0A2868
 
 # 코발트색 주얼 일반
-Show #early
+Hide #early
 	Class == "Jewel"
 	BaseType == "Cobalt Jewel" 
 	Rarity == Normal
@@ -3995,7 +3995,7 @@ Hide #starter
     SetBackgroundColor 10 40 104 240 #0A2868
 
 # 진홍색 주얼 희귀
-Show #highEnd
+Hide #highEnd
 	Class == "Jewel"
 	BaseType == "Crimson Jewel"
 	Rarity == Rare
@@ -4005,7 +4005,7 @@ Show #highEnd
     SetBackgroundColor 132 22 23 240 #841617
 
 # 진홍색 주얼 일반
-Show #early
+Hide #early
 	Class == "Jewel"
 	BaseType == "Crimson Jewel"
 	Rarity == Normal
@@ -4025,7 +4025,7 @@ Hide #starter
     SetBackgroundColor 132 22 23 240 #841617
 
 # 진청록색 주얼 희귀
-Show #highEnd
+Hide #highEnd
 	Class == "Jewel"
 	BaseType == "Viridian Jewel"
 	Rarity == Rare
@@ -4035,7 +4035,7 @@ Show #highEnd
     SetBackgroundColor 1 50 32 240 #013220
 
 # 진청록색 주얼 일반
-Show #early
+Hide #early
 	Class == "Jewel"
 	BaseType == "Viridian Jewel"
 	Rarity == Normal
@@ -4608,34 +4608,34 @@ Show
 	SynthesisedItem True
 	Rarity Unique
 	BaseType == "Assassin's Mitts"
-	SetFontSize 45 #u3tier
+	SetFontSize 28 #u3tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 175 96 37 255 #AF6025
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Star #highEnd
+	#MinimapIcon 0 Orange Star #highEnd
 
 # 3티어  고유 아이템
 Show 
 	Rarity Unique
 	BaseType == "Lacewood Spirit Shield" "Murder Mitts" "Onyx Amulet" "Shadow Sceptre" "Viridian Jewel" "Abyssal Axe" "Amethyst Ring" "Arcanist Gloves" "Arcanist Slippers" "Ashbark Tincture" "Assassin's Garb" "Astral Plate" "Baroque Round Shield" "Bismuth Flask" "Blue Pearl Amulet" "Branded Kite Shield" "Bronzescale Gauntlets" "Citrine Amulet" "Cloth Belt" "Conjurer Boots" "Coral Amulet" "Coral Ring" "Crude Bow" "Crusader Gloves" "Crystal Belt" "Crystal Sceptre" "Death Bow" "Deerskin Gloves" "Demon Dagger" "Desert Brigandine" "Destiny Leather" "Diamond Ring" "Dusk Blade" "Embroidered Gloves" "Eternal Burgonet" "Eternal Sword" "Ezomyte Burgonet" "Ezomyte Dagger" "Full Dragonscale" "Full Wyrmscale" "Gilded Sallet" "Glorious Plate" "Gold Ring" "Granite Flask" "Great Mallet" "Harlequin Mask" "Heavy Belt" "Holy Chainmail" "Hubris Circlet" "Ironwood Tincture" "Jade Amulet" "Judgement Staff" "Lacquered Buckler" "Lapis Amulet" "Large Hybrid Flask" "Lathi" "Leather Belt" "Leather Hood" "Legion Boots" "Lion Sword" "Maelström Staff" "Meatgrinder" "Mesh Gloves" "Midnight Blade" "Military Staff" "Mind Cage" "Necromancer Circlet" "Nightmare Bascinet" "Oakbranch Tincture" "Omen Wand" "Paua Ring" "Pinnacle Tower Shield" "Praetor Crown" "Ranger Bow" "Rawhide Tower Shield" "Reaver Helmet" "Reinforced Greaves" "Ritual Sceptre" "Royal Bow" "Ruby Ring" "Sadist Garb" "Saintly Chainmail" "Saint's Hauberk" "Sapphire Ring" "Satin Gloves" "Scholar's Robe" "Serpentscale Gauntlets" "Shackled Boots" "Sharkskin Boots" "Sharkskin Tunic" "Silk Gloves" "Simple Robe" "Sinner Tricorne" "Solaris Circlet" "Spine Bow" "Spiraled Wand" "Sporebloom Tincture" "Steel Circlet" "Steel Gauntlets" "Steelscale Gauntlets" "Stibnite Flask" "Terror Claw" "Titan Gauntlets" "Titan Greaves" "Tricorne" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Vaal Blade" "Vaal Hatchet" "Vaal Mask" "Vaal Sceptre" "Varnished Coat" "Vile Staff" "Void Sceptre" "Wereclaw Talisman" "Widowsilk Robe" "Zealot Gloves" "Cobalt Jewel" "Citadel Bow" "Ambush Mitts"
-	SetFontSize 45 #u3tier
+	SetFontSize 28 #u3tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 175 96 37 255 #AF6025
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Star #highEnd
+	#MinimapIcon 0 Orange Star #highEnd
 
 # 3티어 리그 전용 고유 아이템
 Show 
 	Rarity Unique
 	BaseType == "Blood Sceptre" "Blunt Arrow Quiver" "Carnal Mitts" "Ezomyte Burgonet" "Ezomyte Staff" "Gladius" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Hydrascale Boots" "Hydrascale Gauntlets" "Imperial Claw" "Legion Sword" "Magistrate Crown" "Mirrored Spiked Shield" "Murder Boots" "Nameless Ring" "Opal Wand" "Painted Tower Shield" "Riveted Gloves" "Royal Burgonet" "Runic Crown" "Runic Gages" "Runic Gauntlets" "Runic Helm" "Runic Sabatons" "Runic Sollerets" "Serpentscale Boots" "Silken Hood" "Slink Boots" "Soldier Gloves" "Sorcerer Boots" "Sovereign Spiked Shield" "Steelwood Bow" "Trapper Boots"
-	SetFontSize 45 #u3tier
+	SetFontSize 28 #u3tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 175 96 37 255 #AF6025
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Star #highEnd
+	#MinimapIcon 0 Orange Star #highEnd
 
 # ============================
 # 4티어 고유 아이템(Reference https://poeladder.com)
@@ -4645,23 +4645,23 @@ Show
 Show 
 	Rarity Unique
 	BaseType == "Bone Circlet" "Cobalt Jewel" "Graceful Sword" "Maple Round Shield" "Visored Sallet" "Agate Amulet" "Amber Amulet" "Ambush Mitts" "Ancient Greaves" "Ancient Spirit Shield" "Assassin's Mitts" "Black Maw Talisman" "Blunt Arrow Quiver" "Bone Armour" "Bone Helmet" "Brass Spirit Shield" "Bronzescale Boots" "Buckskin Tunic" "Callous Mask" "Carnal Mitts" "Carnal Sceptre" "Carved Wand" "Cedar Tower Shield" "Chain Belt" "Chain Gloves" "Clasped Mitts" "Close Helmet" "Cloth Belt" "Clutching Talisman" "Colossal Tower Shield" "Conjurer Gloves" "Copper Plate" "Coral Amulet" "Coral Ring" "Corrugated Buckler" "Corsair Sword" "Crusader Chainmail" "Crusader Plate" "Cutthroat's Garb" "Death Bow" "Destroyer Regalia" "Diamond Flask" "Diamond Ring" "Dragonscale Boots" "Dread Maul" "Eelskin Gloves" "Elder Sword" "Elegant Ringmail" "Engraved Wand" "Etched Greatsword" "Ezomyte Staff" "Fiend Dagger" "Gladius" "Goathide Boots" "Gold Amulet" "Gold Ring" "Golden Plate" "Great Crown" "Great Helmet" "Hallowed Hybrid Flask" "Harbinger Bow" "Harmonic Spirit Shield" "Heavy Arrow Quiver" "Heavy Belt" "Hubris Circlet" "Imbued Wand" "Imperial Claw" "Imperial Staff" "Infernal Axe" "Iron Circlet" "Iron Mask" "Iron Ring" "Ironscale Gauntlets" "Ironwood Buckler" "Jade Amulet" "Jasper Chopper" "Karui Chopper" "Lacquered Garb" "Leather Belt" "Leather Cap" "Legion Gloves" "Legion Sword" "Lion Pelt" "Lunaris Circlet" "Midnight Blade" "Moonstone Ring" "Mosaic Kite Shield" "Necromancer Silks" "Nubuck Boots" "Nubuck Gloves" "Opal Ring" "Ornate Mace" "Paua Ring" "Penetrating Arrow Quiver" "Plague Mask" "Plate Vest" "Platinum Sceptre" "Praetor Crown" "Primal Arrow Quiver" "Prismatic Ring" "Prophet Crown" "Quartz Flask" "Reaver Sword" "Regicide Mask" "Rotfeather Talisman" "Royal Axe" "Royal Sceptre" "Ruby Ring" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Ring" "Satin Gloves" "Sentinel Jacket" "Serpentine Staff" "Sharktooth Arrow Quiver" "Short Bow" "Silken Hood" "Silken Vest" "Soldier Boots" "Spidersilk Robe" "Spike-Point Arrow Quiver" "Steelhead" "Strapped Mitts" "Sulphur Flask" "Tarnished Spirit Shield" "Teak Round Shield" "Terror Maul" "Timeworn Claw" "Tomahawk" "Topaz Ring" "Triumphant Lamellar" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Regalia" "Vanguard Belt" "War Buckler" "Whalebone Rapier" "Wool Gloves" "Wyrmscale Gauntlets" "Zealot Helmet" "Crimson Jewel" "Viridian Jewel" "Elegant Round Shield" "Carnal Armour"
-	SetFontSize 45 #u4tier
+	SetFontSize 24 #u4tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 13 7 3 255 #0D0703
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Circle #end
+	#MinimapIcon 0 Orange Circle #end
 
 # 4티어 리그 전용 고유 아이템
 Show 
 	Rarity Unique
 	BaseType == "Broadhead Arrow Quiver" "Butcher Axe" "Chiming Spirit Shield" "Coiled Staff" "Crimson Round Shield" "Enameled Buckler" "Gemstone Sword" "Phantom Mace" "Piledriver" "Siege Helmet"
-	SetFontSize 45 #u4tier
+	SetFontSize 24 #u4tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 13 7 3 255 #0D0703
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Circle #end
+	#MinimapIcon 0 Orange Circle #end
 
 # ============================
 # 5티어 고유 아이템(Reference https://poeladder.com)
@@ -4671,23 +4671,23 @@ Show
 Show 
 	Rarity Unique
 	BaseType == "Shagreen Boots" "Samite Gloves" "Agate Amulet"
-	SetFontSize 45 #u5tier
+	SetFontSize 20 #u5tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 13 7 3 255 #0D0703
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Circle #end
+	#MinimapIcon 0 Orange Circle #end
 
 # 5티어 고유 아이템
 Show 
 	Rarity Unique
 	BaseType == "Sharktooth Arrow Quiver" "Amber Amulet" "Ambusher" "Antique Greaves" "Antique Rapier" "Assassin Bow" "Auric Mace" "Aventail Helmet" "Awl" "Barbute Helmet" "Basket Rapier" "Bastard Sword" "Blazing Arrow Quiver" "Boot Blade" "Boot Knife" "Brass Maul" "Bronze Gauntlets" "Bronze Sceptre" "Bronzescale Gauntlets" "Carnal Armour" "Carnal Mitts" "Chain Belt" "Chiming Spirit Shield" "Citrine Amulet" "Clasped Boots" "Cleaver" "Cloth Belt" "Compound Spiked Shield" "Conquest Chainmail" "Coral Amulet" "Coral Ring" "Crude Bow" "Decimation Bow" "Decorative Axe" "Deerskin Boots" "Despot Axe" "Dragonscale Gauntlets" "Dream Mace" "Driftwood Wand" "Ebony Tower Shield" "Eelskin Boots" "Elegant Round Shield" "Elegant Sword" "Engraved Wand" "Estoc" "Ezomyte Axe" "Ezomyte Blade" "Feathered Arrow Quiver" "Festival Mask" "Flaying Knife" "Fright Claw" "Gavel" "Gnarled Branch" "Goathide Gloves" "Goat's Horn" "Gold Amulet" "Gold Ring" "Golden Mask" "Goliath Gauntlets" "Great Mallet" "Greater Mana Flask" "Grinning Fetish" "Gut Ripper" "Harbinger Bow" "Headsman Axe" "Heavy Belt" "Highland Blade" "Imbued Wand" "Imperial Skean" "Infernal Sword" "Iron Gauntlets" "Iron Hat" "Iron Ring" "Iron Staff" "Ironscale Boots" "Jade Amulet" "Jade Hatchet" "Jagged Foil" "Jagged Maul" "Karui Sceptre" "Lacquered Helmet" "Laminated Kite Shield" "Lapis Amulet" "Latticed Ringmail" "Leather Belt" "Legion Boots" "Long Bow" "Marble Amulet" "Mesh Boots" "Mesh Gloves" "Mirrored Spiked Shield" "Moonstone Ring" "Nailed Fist" "Nightmare Bascinet" "Onyx Amulet" "Opal Sceptre" "Ornate Ringmail" "Ornate Sword" "Painted Buckler" "Paua Amulet" "Paua Ring" "Pine Buckler" "Plank Kite Shield" "Plated Greaves" "Platinum Kris" "Poleaxe" "Polished Spiked Shield" "Primordial Staff" "Prophet Crown" "Quicksilver Flask" "Recurve Bow" "Reinforced Tower Shield" "Rock Breaker" "Rotted Round Shield" "Royal Skean" "Royal Staff" "Rusted Sword" "Rustic Sash" "Sabre" "Sage Wand" "Sage's Robe" "Samite Gloves" "Samnite Helmet" "Scholar Boots" "Secutor Helm" "Serrated Arrow Quiver" "Shadow Axe" "Shagreen Gloves" "Silk Slippers" "Silver Flask" "Skinning Knife" "Sledgehammer" "Slink Gloves" "Soldier Gloves" "Soldier Helmet" "Spiked Club" "Spiraled Wand" "Stealth Boots" "Stiletto" "Strapped Boots" "Studded Round Shield" "Sun Leather" "Supreme Spiked Shield" "Terror Claw" "Thresher Claw" "Throat Stabber" "Tiger Sword" "Titan Gauntlets" "Tribal Circlet" "Turquoise Amulet" "Twilight Blade" "Two-Point Arrow Quiver" "Tyrant's Sekhem" "Unset Ring" "Ursine Pelt" "Vaal Buckler" "Vaal Claw" "Velvet Gloves" "Velvet Slippers" "Vile Arrow Quiver" "Vine Circlet" "War Hammer" "War Sword" "Wild Leather" "Wolf Pelt" "Woodsplitter" "Wool Shoes" "Wrapped Mitts"
-	SetFontSize 45 #u5tier
+	SetFontSize 20 #u5tier
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 13 7 3 255 #0D0703
     SetBackgroundColor 13 7 3 240 #0D0703
 	PlayEffect Orange
-	MinimapIcon 0 Orange Circle #end
+	#MinimapIcon 0 Orange Circle #end
 
 # 방어 코드
 Show #default
@@ -4858,7 +4858,7 @@ Hide #default
 # 생명력, 마나, 하이브리드 플라스크
 # ================================================
 # 생명력 플라스크 
-Show #early
+Hide #early
 	ItemLevel >= 80
 	Rarity Normal Magic
 	Class == "Life Flasks"
@@ -4984,7 +4984,7 @@ Hide #default
     SetBackgroundColor 20 20 0 240 #141400
 
 # 특수 플라스크
-Show #highEnd
+Hide #highEnd
     ItemLevel >= 85 
 	Rarity Normal Magic
 	Class == "Utility Flasks" 
@@ -4993,7 +4993,7 @@ Show #highEnd
     SetBorderColor 0 0 0 255 #000000
     SetBackgroundColor 25 100 75 240 #19644B
 
-Show #end
+Hide #end
 	Rarity Normal Magic
 	Class == "Utility Flasks" 
 	SetFontSize 45
@@ -5269,7 +5269,7 @@ Show #uber
     PlayEffect White
     MinimapIcon 2 White Circle #uber
 
-Show #highEnd
+Hide #highEnd
     StackSize >= 2
     Class == "Stackable Currency"
     BaseType == "Simulacrum Splinter"
@@ -5279,10 +5279,10 @@ Show #highEnd
     SetBackgroundColor 77 59 59 240 #4D3B3B
     PlayAlertSound 2 300
     PlayEffect White
-    MinimapIcon 2 White Circle #highEnd
+    #MinimapIcon 2 White Circle #highEnd
 
 # 복제된 영토 파편 클래스는 중첩 가능 화폐
-Show #end
+Hide #end
     Class == "Stackable Currency"
     BaseType == "Simulacrum Splinter"
     SetFontSize 45
@@ -5290,7 +5290,7 @@ Show #end
     SetBorderColor 250 246 230 255 #FAF6E6
     SetBackgroundColor 77 59 59 240 #4D3B3B
     PlayEffect White
-    MinimapIcon 2 White Circle #end
+    #MinimapIcon 2 White Circle #end
 
 # ================================================
 # Crescent Splinter 초승달 파편
@@ -5410,7 +5410,7 @@ Show
 # The Thaumaturgist 마석학자/8 (샤브론의 계시 타락)
 # A Dab of Ink/9 약간의 잉크/9 (시인의 펜)
 # A Note in the Wind 바람 속의 기록/4 (아세나스의 징표)
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "The One With All" "The Avenger" "The Polymath" "The Queen" "Poisoned Faith" "The Formless Sea" "The Offspring" "The Escape" "The Thaumaturgist" "A Dab of Ink" "The Spark and the Flame" "A Note in the Wind"
     SetFontSize 45
@@ -5424,7 +5424,7 @@ Show #end
 # Haunting Shadows 출몰하는 그림자
 # The Coming Storm 다가오는 태풍/8 (번개 도선)
 # Vanity 자만심/9 (타뷸라 라사 타락)
-Show #mid
+Hide #mid
     Class == "Divination Cards"
     BaseType == "The Scavenger" "The Sun" "Haunting Shadows" "The Deceiver" "The Coming Storm" "Time-Lost Relic" "Vanity"
     SetFontSize 45
@@ -5446,7 +5446,7 @@ Show #mid
 # The Dark Mage 어둠 마법사/6 (6연결 지팡이)
 # The Warlord 전쟁군주/6 (6연결 광환의 대형 망치 아이템 레벨: 83)
 # Draped in Dreams 드리운 꿈 (6연결 우주의 판금 갑옷 아이템 레벨: 100 영향을 받은 아이템)
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "Humility" "The Sacrifice" "The Ethereal" "The Celestial Justicar" "Immortal Resolve" "The White Knight" "The Dark Mage" "The Warlord" "Draped in Dreams"
     SetFontSize 45
@@ -5459,7 +5459,7 @@ Show #end
 # The Chains that Bind (속박의 사슬) = 6연결 갑옷
 # The Porcupine (호저/6) = 6연결 단궁 아이템 레벨: 50
 # Imperial Legacy (제국의 유산/22) = 6연결 제국 활 아이템 레벨: 100
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "The Dapper Prodigy" "Emperor of Purity" "The Chains that Bind" "The Porcupine" "Imperial Legacy"
     SetFontSize 45
@@ -5469,7 +5469,7 @@ Show #end
 
 # The Jeweller's Boon (보석 상인의 은혜) = 5연결 갑옷(영향을 받은 아이템)
 # The Flora's Gift (식물의 선물/5) = 5연결 지팡이 (아이템 레벨: 66)
-Show #mid
+Hide #mid
     Class == "Divination Cards"
     BaseType == "The Jeweller's Boon" "The Flora's Gift"
     SetFontSize 45
@@ -5489,7 +5489,7 @@ Show #mid
 # The Saint's Treasure 성자의 보물/10 (엑잘티드 오브 x2)
 # Brother's Stash 형제의 보관함/1 (엑잘티드 오브 x5)
 # 화폐 보상 highEnd
-Show #highEnd
+Hide #highEnd
     Class == "Divination Cards"
     BaseType == "Emperor's Luck" "The Heroic Shot" "The Innocent" "Chaotic Disposition" "The Saint's Treasure" "The Transformation" "Brother's Stash"
     SetFontSize 45
@@ -5517,7 +5517,7 @@ Show #highEnd
 # Vinia's Token 비니아의 증표/5 (후회의 오브 x10)
 
 # 화폐 보상 end
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "Three Faces in the Dark" "Rain of Chaos" "Loyalty" "Lucky Connections" "The Fool" "A Sea of Blue" "Acclimatisation" "No Traces" "The Inventor" "The Survivalist" "The Wrath" "The Hoarder" "The Tireless Extractor" "Society's Remorse" "The Union" "Ever-Changing" "Vinia's Token" 
     SetFontSize 45
@@ -5528,7 +5528,7 @@ Show #end
 # The Master Artisan 장인/5 (퀄리티 화폐 x20)
 # Parasitic Passengers 기생충 밥벌레/8 (인큐베이터 x10, 아이템 레벨: 84)
 # 화폐 보상 mid
-Show #mid
+Hide #mid
     Class == "Divination Cards"
     BaseType == "The Master Artisan" "Parasitic Passengers"
     SetFontSize 45
@@ -5595,7 +5595,7 @@ Show #default
 # 서미누기 확인
 
 # 3 티어 점술 카드(11c~25c)
-Show #highEnd
+Hide #highEnd
     Class == "Divination Cards"
     BaseType == "Peaceful Moments" "Pride of the First Ones" "Assassin's Gift" "Silence and Frost" "The Mad King" "The Astromancer" "Misery in Darkness" "The Leviathan" "The Patient" "A Modest Request" "The Old Man" "Alluring Bounty" "Rebirth and Renewal" "The Aspirant" "The Fishmonger" "The One That Got Away" "The Rabbit's Foot" "Lethean Temptation" "Judging Voices" "Eternal Bonds" "Who Asked" "Further Invention" "The Bitter Blossom" "Deadly Joy" "Fateful Meeting" "The Garish Power" "The Shortcut" "Duality" "The Chosen"
     SetFontSize 45
@@ -5604,7 +5604,7 @@ Show #highEnd
     SetBackgroundColor 118 60 79 240 #763C4F
     PlayAlertSound 1 300
     PlayEffect Yellow Temp
-    MinimapIcon 0 Yellow Cross #highEnd
+    #MinimapIcon 0 Yellow Cross #highEnd
 
 # ================================================
 # 4 티어 점술 카드(6c~10c)
@@ -5613,7 +5613,7 @@ Show #highEnd
 # The Hook 갈고리/8 21레벨 23퀄리티 변성 젬
 # Doryani's Epiphany 도리아니의 통찰/3 21레벨 20퀄리티 변성 젬
 # The Magma Crab 마그마 게 21레벨 바알 용암 방패
-Show #highEnd
+Hide #highEnd
     Class == "Divination Cards"
     BaseType == "Doryani's Epiphany" "The Magma Crab" "The Hook"
     SetFontSize 45
@@ -5632,7 +5632,7 @@ Show
     MinimapIcon 2 White Circle
 
 # 4 티어 점술 카드(6c~10c)
-Show #highEnd 
+Hide #highEnd 
     Class == "Divination Cards"
     BaseType == "Council of Cats" "The Life Thief" "The Vast" "Chasing Risk" "The Enforcer" "Azyran's Reward" "Dying Light" "The Strategist" "Tranquillity" "The Last Supper" "Ambitious Obsession" "Guardian's Challenge" "Rebirth" "The Finishing Touch" "The Risk" "The Rusted Bard" "The Wedding Gift" "Toxic Tidings" "The Queen" "The Forgotten Treasure" "A Familiar Call" "Gift of Asenath" "The Prince of Darkness" "Lachrymal Necrosis" "A Chilling Wind" "Brush, Paint and Palette" "Burning Blood" "The Academic" "Altered Perception" "The Eternal War" "Something Dark"
     SetFontSize 45
@@ -5658,7 +5658,7 @@ Show
     SetBackgroundColor 77 16 36 240 #4D1024
     MinimapIcon 2 White Circle
 
-Show #highEnd
+Hide #highEnd
     Class == "Divination Cards"
     BaseType == "The Void" "The Realm" "The Blessing of Moosh" 
     SetFontSize 45
@@ -5669,7 +5669,7 @@ Show #highEnd
 
 # 서미누기 확인
 # 5 티어 점술 카드(약2~5c)
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "The King's Heart" "The Professor" "More is Never Enough" "The Wretched" "Last Hope" "The Whiteout" "Arrogance of the Vaal" "Desperate Crusade" "Sambodhi's Vow" "The Offering" "The Breach" "Perfection" "Anarchy's Price" "Checkmate" "Forbidden Power" "Hunter's Reward" "Merciless Armament" "Prejudice" "Sambodhi's Wisdom" "The Catch" "The Forward Gaze" "The Hale Heart" "The Undaunted" "Treasure Hunter" "Baited Expectations" "Boon of the First Ones" "Eldritch Perfection" "Endless Night" "Lucky Deck" "Reckless Ambition" "The Admirer" "The Brittle Emperor" "The Cacophony" "The Lord in Black" "The Messenger" "The Twilight Moon" "Triskaidekaphobia" "The Mind's Eyes" "The Wolf's Legacy" "The Wilted Rose" "Void of the Elements" "Audacity" "A Dusty Memory" "Deathly Designs" "The Tumbleweed" "The Undisputed" "From Bone to Ashes" "Abandoned Wealth" "Keeper's Corruption" "The Throne" "Dark Dreams" "Harmony of Souls" "Pride Before the Fall" "The Brawny Battle Mage" "The Celestial Stone" "The Deep Ones" "The Dreamer" "The Eye of the Dragon" "The Landing" "The Road to Power" "The Seeker" "The Spoiled Prince" "The Unexpected Prize" "Prometheus' Armoury" "Echoes of Love" "The Craving" "The Enthusiasts" "The Primordial" "The Shepherd's Sandals" "Costly Curio" "Unchained" "The Awakened" "Brotherhood in Exile" "The Dungeon Master" "A Stone Perfected" "Etched in Blood" "Mawr Blaidd" "Nook's Crown" "The Hive of Knowledge" "The Scout" "Bijoux" "Akil's Prophecy"
     SetFontSize 45
@@ -5683,7 +5683,7 @@ Show #end
 
 # Dying Anguish 죽음의 비통함/8 19레벨 변성 젬, 퀄리티: +19%
 # Terrible Secret of Space 우주의 끔찍한 비밀/8 21레벨 변성 골렘 젬
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "Dying Anguish" "Terrible Secret of Space"
     SetFontSize 45
@@ -5694,7 +5694,7 @@ Show #end
 # Lingering Remnants 지속되는 유물/16 (바알 사원)
 # The Price of Protection 보호의 대가/5 (엘더 가디언 지도 등급: 14~16 8모드)
 # The Price of Prescience 선지의 대가 (바알 사원 5환영 타락)
-Show #highEnd
+Hide #highEnd
     Class == "Divination Cards"
     BaseType == "Lingering Remnants" "The Price of Protection" "The Price of Prescience"
     SetFontSize 45
@@ -5708,7 +5708,7 @@ Show #highEnd
 # Lost Worlds 잃어버린 세계/8 (지도 등급:  15)
 # Left to Fate 운명에 맡기다/4 (지도 등급: 16 미확인 타락)
 # The Easy Stroll 편안한 산책/2 (지도 등급: 15 8모드 타락)
-Show #end
+Hide #end
     Class == "Divination Cards"
     BaseType == "Azure Rage" "The Surveyor" "The Trial" "Lost Worlds" "Volatile Power" "Left to Fate" "The Easy Stroll"
     SetFontSize 45
@@ -5717,7 +5717,7 @@ Show #end
     SetBackgroundColor 0 42 47 240 #002A2F
 
 # 최하 티어, 6 티어 점술 카드(약 1c)
-Show #mid
+Hide #mid
     Class == "Divination Cards"
     BaseType == "The Endurance" "The Puzzle" "The Lover" "Lantador's Lost Love" "The Scarred Meadow" "Thirst for Knowledge" "Earth Drinker" "The Catalyst" "The King's Blade" "Might is Right" "The Adventuring Spirit" "The Sword King's Salute" "Boon of Justice" "The Scholar" "The Forsaken" "The Rite of Elements" "The Witch" "The Hermit" "The Penitent" "Destined to Crumble" "Hunter's Resolve" "Mitts" "The Twins" "The Journalist" "The Bones" "The Doppelganger" "The Traitor" "The Blazing Fire" "Three Voices" "The Standoff" "The Arena Champion" "Doedre's Madness" "The Wolf" "The Ruthless Ceinture" "The Battle Born" "Dark Temptation" "Assassin's Favour" "Glimmer of Hope" "The Gladiator" "Shard of Fate" "The Metalsmith's Gift" "The Body" "The Skeleton" "The Valkyrie" "Cameria's Cut" "Atziri's Arsenal" "Alone in the Darkness" "Blind Venture" "Boundless Realms" "Broken Truce" "Cartographer's Delight" "Coveted Possession" "Cursed Words" "Gemcutter's Promise" "Grave Knowledge" "Her Mask" "Hope" "Hubris" "Jack in the Box" "Lysah's Respite" "Prosperity" "Rain Tempter" "Rats" "Scholar of the Seas" "Struck by Lightning" "The Aesthete" "The Archmage's Right Hand" "The Army of Blood" "The Betrayal" "The Cache" "The Calling" "The Carrion Crow" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Fletcher" "The Fox" "The Gambler" "The Gemcutter" "The Gentleman" "The Harvester" "The Inoculated" "The Lich" "The Lion" "The Lunaris Priestess" "The Mountain" "The Opulent" "The Rabid Rhoa" "The Sigil" "The Stormcaller" "The Summoner" "The Surgeon" "The Tower" "The Visionary" "The Warden" "The Watcher" "The Web" "The Wolf's Shadow" "The Wolverine" "Thunderous Skies" "A Mother's Parting Gift" "Call to the First Ones" "The Bear Woman" "The Fathomless Depths" "The Feast" "The Golden Era" "The Hunger" "The Lord of Celebration" "The Obscured" "The Obscured" "The Side Quest" "Turn the Other Cheek" "Astral Protection" "Buried Treasure" "Man With Bear" "The Beast" "The Cataclysm" "The Darkest Dream" "The Dreamland" "The Incantation" "The Oath" "The Pact" "The Poet" "The Wind" "The Wolven King's Bite" "Alivia's Grace" "Death" "Gift of the Gemling Queen" "Heterochromia" "The Card Sharp" "The Insatiable" "The Journey" "The Mercenary" "The Pack Leader" "The Tyrant" "Vile Power" "The Cursed King" "The Jester" "The Siren" "The Deal" "Demigod's Wager" "Dialla's Subjugation" "Light and Truth" "The Conduit" "The Return of the Rat" "The Fox in the Brambles"
     SetFontSize 45
@@ -5834,7 +5834,7 @@ Show #default
 # ================================================
 
 # 일반 스킬 젬 퀄리티와 젬 레벨이 20 이상인 것
-Show #highEnd
+Hide #highEnd
     TransfiguredGem False
     Quality >= 20
     GemLevel >= 20
@@ -5848,7 +5848,7 @@ Show #highEnd
     MinimapIcon 0 Red Triangle
 
 # 일반 스킬 젬 퀄리티가 14 이상인 것
-Show #highEnd
+Hide #highEnd
     TransfiguredGem False
     Quality >= 14
     Class == "Skill Gems"
@@ -5861,7 +5861,7 @@ Show #highEnd
     MinimapIcon 1 Cyan Triangle
 
 # 일반 스킬 젬 퀄리티가 7 이상인 것
-Show #end
+Hide #end
     TransfiguredGem False
     Quality >= 7
     Class == "Skill Gems"
@@ -5896,7 +5896,7 @@ Show #default
 # ================================================
 
 # 일반 보조 젬 퀄리티가 20 이상인 것
-Show #highEnd
+Hide #highEnd
     TransfiguredGem False
     Quality >= 20
     Class == "Support Gems"
@@ -5906,7 +5906,7 @@ Show #highEnd
     SetBackgroundColor 3 17 17 245 #031111
 
 # 일반 보조 젬 퀄리티가 20 이상인 것
-Show #end
+Hide #end
     TransfiguredGem False
     Quality >= 14
     Class == "Support Gems"
@@ -5916,7 +5916,7 @@ Show #end
     SetBackgroundColor 3 17 17 245 #031111
 
 # 일반 보조 젬 퀄리티가 10 이상인 것
-Show #mid
+Hide #mid
     TransfiguredGem False
     Quality >= 7
     Class == "Support Gems"
@@ -5939,7 +5939,7 @@ Hide #starter
 # ================================================
 
 # 분열된 심연 주얼
-Show #highEnd
+Hide #highEnd
     FracturedItem True
     Mirrored False
     Corrupted False
@@ -5954,7 +5954,7 @@ Show #highEnd
 
 # 고정 속성이 1개 이상 있는
 # 타락된 심연 주얼 
-Show #highEnd
+Hide #highEnd
     Corrupted True
     CorruptedMods >= 1
     Class == "Abyss Jewels"
@@ -5968,7 +5968,7 @@ Show #highEnd
     MinimapIcon 1 Cyan Moon
 
 # 타락된 심연 주얼(타락한 응시로 속성 5-6개 주얼)
-Show #highEnd
+Hide #highEnd
     Corrupted True
     Class == "Abyss Jewels"
     BaseType == "Searching Eye Jewel" "Ghastly Eye Jewel" "Murderous Eye Jewel"
@@ -5984,7 +5984,7 @@ Show #highEnd
 # ================================================
 
 # 심연 주얼 미확인(희귀)
-Show #highEnd
+Hide #highEnd
     Mirrored False
     Identified False
     ItemLevel >= 83
@@ -5997,7 +5997,7 @@ Show #highEnd
     SetFontSize 45
 
 # 심연 주얼 확인(희귀)
-Show #highEnd
+Hide #highEnd
     Mirrored False
     Identified True
     ItemLevel >= 83
@@ -6010,7 +6010,7 @@ Show #highEnd
     SetFontSize 45
 
 # 심연 주얼 미확인(희귀)
-Show #end
+Hide #end
     Mirrored False
     Identified False
     ItemLevel >= 75
@@ -6023,7 +6023,7 @@ Show #end
     SetFontSize 45
 
 # 심연 주얼 미확인(마법)
-Show #end
+Hide #end
     Mirrored False
     Identified False
     ItemLevel >= 75
@@ -6034,7 +6034,7 @@ Show #end
     # SetBackgroundColor 43 45 66 255 #2B2D42
     SetFontSize 45
 
-Show #mid
+Hide #mid
     Mirrored False
     Identified False
     ItemLevel >= 68
@@ -6049,7 +6049,7 @@ Show #mid
 # 비-고유 심연 주얼
 # ================================================
 
-Show #early
+Hide #early
     Rarity != Unique 
     Class == "Abyss Jewels"
     SetFontSize 45
@@ -6146,7 +6146,7 @@ Show #uber
 	SetTextColor 250 218 94 255 #FADA5E
 	SetBorderColor 250 218 94 255 #FADA5E
 	SetBackgroundColor 1 11 19 240 #010B13
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 진홍빛
 Show #uber
@@ -6156,30 +6156,30 @@ Show #uber
     SetTextColor 255 248 231 255 #FFF8E7
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 132 28 49 240 #841C31
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 보랏빛
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType == "Violet Oil" 
 	SetFontSize 45
     SetTextColor 255 248 231 255 #FFF8E7
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 81 6 96 240 #510660
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 남색
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType == "Indigo Oil" 
 	SetFontSize 45
     SetTextColor 255 248 231 255 #FFF8E7
     SetBorderColor 255 248 231 255 #FFF8E7
     SetBackgroundColor 46 2 55 240 #2E0237
-    MinimapIcon 1 White Circle #highEnd
+    #MinimapIcon 1 White Circle #highEnd
 
 # 청록빛, 담청빛
-Show #end
+Hide #end
 	Class == "Stackable Currency"
 	BaseType == "Teal Oil" "Azure Oil"
 	SetFontSize 45
@@ -6188,7 +6188,7 @@ Show #end
 	SetBackgroundColor 0 0 0 240 #000000
 
 # 투명한, 적갈빛, 호박빛, 신록빛 
-Show #end
+Hide #end
 	Class == "Stackable Currency"
 	BaseType == "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil"
 	SetFontSize 45
@@ -6274,14 +6274,14 @@ Show #uber
 	MinimapIcon 1 Purple Kite #uber
 
 # 차율라 파편
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType == "Splinter of Chayula"
 	SetFontSize 45
 	SetTextColor 219 103 231 255
 	SetBorderColor 219 103 231 255
 	SetBackgroundColor 0 0 0 255
-	MinimapIcon 1 Purple Kite #highEnd
+	#MinimapIcon 1 Purple Kite #highEnd
 
 # 울네톨 파편
 Show #uber
@@ -6295,7 +6295,7 @@ Show #uber
 	MinimapIcon 1 White Kite #uber
 
 # 울네톨 파편
-Show #highEnd
+Hide #highEnd
 	StackSize >= 2
 	Class == "Stackable Currency"
 	BaseType == "Splinter of Uul-Netol"
@@ -6303,16 +6303,16 @@ Show #highEnd
 	SetTextColor 218 218 205 255
 	SetBorderColor 218 218 205 255
 	SetBackgroundColor 0 0 0 255
-	MinimapIcon 1 White Kite #highEnd
+	#MinimapIcon 1 White Kite #highEnd
 
-Show #end
+Hide #end
 	Class == "Stackable Currency"
 	BaseType == "Splinter of Uul-Netol"
 	SetFontSize 45
 	SetTextColor 218 218 205 255
 	SetBorderColor 218 218 205 255
 	SetBackgroundColor 0 0 0 255
-	MinimapIcon 1 White Kite #end
+	#MinimapIcon 1 White Kite #end
 
 # 조프 툴 에쉬 파편
 Show #uber
@@ -6325,7 +6325,7 @@ Show #uber
 	SetBackgroundColor 0 0 0 255
     MinimapIcon 2 White Kite #uber
 
-Show #highEnd
+Hide #highEnd
 	StackSize >= 2
 	Class == "Stackable Currency"
 	BaseType == "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh"
@@ -6333,16 +6333,16 @@ Show #highEnd
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Kite #highEnd
+    #MinimapIcon 2 White Kite #highEnd
 
-Show #end
+Hide #end
 	Class == "Stackable Currency"
 	BaseType == "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh"
 	SetFontSize 45
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 1 White Kite #end
+    #MinimapIcon 1 White Kite #end
 
 # ================================================
 # 복제된 파편과 복제된 영토
@@ -6414,7 +6414,7 @@ Show
 	MinimapIcon 0 White Circle
 	CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
-Show #highEnd
+Hide #highEnd
     Class == "Jewel"
     BaseType == "Large Cluster Jewel"
 	Rarity == Normal Magic Rare
@@ -6424,7 +6424,7 @@ Show #highEnd
     SetBorderColor 98 111 201 255 #626FC9
     SetBackgroundColor 17 17 17 240 #111111
 
-Show #highEnd
+Hide #highEnd
     Class == "Jewel"
     BaseType == "Large Cluster Jewel"
 	Rarity == Normal Magic Rare
@@ -6434,7 +6434,7 @@ Show #highEnd
     SetBorderColor 98 111 201 255 #626FC9
     SetBackgroundColor 17 17 17 240 #111111
 
-Show #highEnd
+Hide #highEnd
     Class == "Jewel"
     BaseType == "Large Cluster Jewel"
 	Rarity == Normal Magic Rare
@@ -6477,7 +6477,7 @@ Show
 	MinimapIcon 0 White Circle
 
 # 6구 중형 스킬 군 주얼
-Show #highEnd
+Hide #highEnd
     Class == "Jewel"
 	BaseType == "Medium Cluster Jewel"
 	Rarity == Normal Magic Rare
@@ -6509,7 +6509,7 @@ Show
 	CustomAlertSoundOptional "./CustomSound/good1.wav" 300
 
 # 2구 방어도 
-Show #highEnd
+Hide #highEnd
     Class == "Jewel"
 	BaseType == "Small Cluster Jewel"
 	Rarity == Normal Magic Rare
@@ -6584,7 +6584,7 @@ Show #uber
     CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 # 그 외 나머지 화석
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType "Fossil"
 	SetFontSize 45
@@ -6698,17 +6698,17 @@ Show #default
 	MinimapIcon 1 Cyan Circle
 
 #절규하는
-Show #highEnd
+Hide #highEnd
 	Class == "Stackable Currency"
 	BaseType "Screaming Essence of"
 	SetFontSize 45
 	SetTextColor 247 247 247 255
 	SetBorderColor 58 168 193 255
 	SetBackgroundColor 37 67 75 240
-    # MinimapIcon 2 Cyan Circle #highEnd
+    # #MinimapIcon 2 Cyan Circle #highEnd
 
 #속삭이는 불평하는 흐느끼는 울부짖는
-Show #end
+Hide #end
 	Class == "Stackable Currency"
 	BaseType "Whispering Essence of" "Muttering Essence of" "Weeping Essence of" "Wailing Essence of"
 	SetFontSize 45
@@ -6758,7 +6758,7 @@ Show #uber
 	MinimapIcon 0 Yellow Circle #uber
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
-Show #highEnd
+Hide #highEnd
 	Class "Incubator"
 	BaseType == "Geomancer's Incubator"
 	SetFontSize 45
@@ -6767,11 +6767,11 @@ Show #highEnd
     SetBackgroundColor 160 78 246 240 #A04EF6
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 2 Yellow Circle #highEnd
+	#MinimapIcon 2 Yellow Circle #highEnd
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 #군단 인큐베이터 숨기기
-Show #highEnd
+Hide #highEnd
 	Class "Incubator"
 	BaseType != "Skittering Incubator" "Singular Incubator" 
 	SetFontSize 45
@@ -6869,7 +6869,7 @@ Show #uber
 	MinimapIcon 2 White Kite #uber
 	PlayAlertSound 2 300
 
-Show #highEnd
+Hide #highEnd
 	StackSize >= 6
 	Class == "Stackable Currency"
 	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
@@ -6878,10 +6878,10 @@ Show #highEnd
 	SetBorderColor 208 240 192 255
 	SetBackgroundColor 0 0 0 255
     PlayEffect White Temp
-	MinimapIcon 2 White Kite #highEnd
+	#MinimapIcon 2 White Kite #highEnd
 	PlayAlertSound 2 300
 
-Show #end
+Hide #end
 	StackSize >= 4
 	Class == "Stackable Currency"
 	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
@@ -6890,10 +6890,10 @@ Show #end
 	SetBorderColor 208 240 192 255
 	SetBackgroundColor 0 0 0 255
     PlayEffect White Temp
-	MinimapIcon 2 White Kite #end
+	#MinimapIcon 2 White Kite #end
 	PlayAlertSound 2 300
 
-Show #mid
+Hide #mid
 	StackSize >= 2
 	Class == "Stackable Currency"
 	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
@@ -6902,10 +6902,10 @@ Show #mid
 	SetBorderColor 208 240 192 255
 	SetBackgroundColor 0 0 0 255
     PlayEffect White Temp
-	MinimapIcon 2 White Kite #mid
+	#MinimapIcon 2 White Kite #mid
 	PlayAlertSound 2 300
 
-Show #early
+Hide #early
 	Class == "Stackable Currency"
 	BaseType == "Timeless Maraketh Splinter" "Timeless Templar Splinter"
 	SetFontSize 45
@@ -6913,7 +6913,7 @@ Show #early
 	SetBorderColor 208 240 192 255
 	SetBackgroundColor 0 0 0 255
     PlayEffect White Temp
-	MinimapIcon 2 White Kite #mid
+	#MinimapIcon 2 White Kite #mid
 	PlayAlertSound 2 300
 
 # 바알 파편, 영원한 제국 파편, 카루이 파편
@@ -6929,7 +6929,7 @@ Show #uber
 	PlayAlertSound 2 300
 
 # 바알 파편, 영원한 제국 파편, 카루이 파편
-Show #highEnd
+Hide #highEnd
 	StackSize >= 6
 	Class == "Stackable Currency"
 	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
@@ -6937,10 +6937,10 @@ Show #highEnd
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Kite #highEnd
+    #MinimapIcon 2 White Kite #highEnd
 	PlayAlertSound 2 300
 
-Show #end
+Hide #end
 	StackSize >= 4
 	Class == "Stackable Currency"
 	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
@@ -6948,10 +6948,10 @@ Show #end
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Kite #end
+    #MinimapIcon 2 White Kite #end
 	PlayAlertSound 2 300
 
-Show #mid
+Hide #mid
 	StackSize >= 2
 	Class == "Stackable Currency"
 	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
@@ -6959,17 +6959,17 @@ Show #mid
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Kite #mid
+    #MinimapIcon 2 White Kite #mid
 	PlayAlertSound 2 300
 
-Show #early
+Hide #early
 	Class == "Stackable Currency"
 	BaseType == "Timeless Vaal Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter"
 	SetFontSize 45
     SetTextColor 240 193 209 255
 	SetBorderColor 240 193 209 255
 	SetBackgroundColor 0 0 0 255
-    MinimapIcon 2 White Kite #early
+    #MinimapIcon 2 White Kite #early
 	PlayAlertSound 2 300
 
 # 방어코드
@@ -7100,7 +7100,7 @@ Show #uber
 	PlayEffect Red
 	MinimapIcon 1 Red Square #uber
 
-Show #highEnd
+Hide #highEnd
     Corrupted True
 	MapTier < 16
 	MapTier > 13
@@ -7112,9 +7112,9 @@ Show #highEnd
 	SetFontSize 45
 	PlayAlertSound 5 300
 	PlayEffect Red
-	MinimapIcon 1 Red Square #highEnd
+	#MinimapIcon 1 Red Square #highEnd
 
-Show #end
+Hide #end
     Corrupted True
 	MapTier < 14
 	Class == "Maps"
@@ -7125,10 +7125,10 @@ Show #end
 	SetFontSize 45
 	PlayAlertSound 5 300
 	PlayEffect Red
-	MinimapIcon 1 Red Square #end
+	#MinimapIcon 1 Red Square #end
 
 # 타락 마법 지도
-Show #highEnd
+Hide #highEnd
     Corrupted True
 	Class == "Maps"
 	Rarity == Magic
@@ -7137,10 +7137,10 @@ Show #highEnd
     SetBackgroundColor 17 17 17 240 #111111
 	SetFontSize 45
 	PlayEffect Yellow
-	MinimapIcon 1 Yellow Square #highEnd
+	#MinimapIcon 1 Yellow Square #highEnd
 
 # 타락 일반 지도 숨기기
-Show #end
+Hide #end
     Corrupted True
 	Class == "Maps"
 	Rarity Normal
@@ -7240,7 +7240,7 @@ Show #uber
 	MinimapIcon 1 Red Square #uber
 
 # 14티어 이하 빨간 지도
-Show #highEnd
+Hide #highEnd
 	MapTier >= 11
 	Class == "Maps"
 	Rarity != Unique
@@ -7271,7 +7271,7 @@ Show #highEnd
 # 	PlayAlertSound 4 300
 
 # 노란 지도
-Show #highEnd
+Hide #highEnd
 	MapTier >= 6
 	MapTier <= 10
 	Class == "Maps"
@@ -7282,7 +7282,7 @@ Show #highEnd
     SetBackgroundColor 18 15 0 240 #120F00
 	PlayAlertSound 4 300
 	PlayEffect Yellow Temp
-	MinimapIcon 1 Yellow Square #highEnd
+	#MinimapIcon 1 Yellow Square #highEnd
 
 # # 타락 지도 1~5
 # Show
@@ -7303,7 +7303,7 @@ Show #highEnd
 # 	PlayAlertSound 4 300
 
 # 하얀 지도
-Show #highEnd
+Hide #highEnd
 	MapTier >= 1
 	MapTier <= 5
 	Class == "Maps"
@@ -7314,7 +7314,7 @@ Show #highEnd
     SetBackgroundColor 17 17 17 240 #111111
 	PlayAlertSound 3 300
 	PlayEffect White Temp
-	MinimapIcon 1 White Square #highEnd
+	#MinimapIcon 1 White Square #highEnd
 
 # ================================================
 # ================================================
@@ -7367,7 +7367,7 @@ Show #uber
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Star #uber
 
-Show #highEnd
+Hide #highEnd
 	Rarity Unique
 	Class == "Maps"
 	BaseType == "Atoll Map" "Cemetery Map" "Dunes Map" "Necropolis Map" "Overgrown Shrine Map" "Shore Map" "Strand Map" "Underground Sea Map" "Vaal Pyramid Map"
@@ -7377,9 +7377,9 @@ Show #highEnd
 	SetBackgroundColor 175 96 37 255
 	PlayAlertSound 3 300
 	PlayEffect Brown
-	MinimapIcon 1 Brown Star #highEnd
+	#MinimapIcon 1 Brown Star #highEnd
 
-Show #highEnd
+Hide #highEnd
 	Rarity Unique
 	Class == "Maps"
 	BaseType == "Bone Crypt Map" "Promenade Map"
@@ -7389,9 +7389,9 @@ Show #highEnd
 	SetBackgroundColor 20 20 0 255
 	PlayAlertSound 3 300
 	PlayEffect Brown
-	MinimapIcon 2 Brown Star #highEnd
+	#MinimapIcon 2 Brown Star #highEnd
 
-Show #highEnd
+Hide #highEnd
 	Rarity Unique
 	Class == "Maps"
 	SetFontSize 45
@@ -7400,7 +7400,7 @@ Show #highEnd
 	SetBackgroundColor 20 20 0 255
 	PlayAlertSound 3 300
 	PlayEffect Pink
-	MinimapIcon 0 Pink Circle #highEnd# ================================================
+	#MinimapIcon 0 Pink Circle #highEnd# ================================================
 # 성역 유뮬
 # ================================================
 Show
@@ -7497,7 +7497,7 @@ Show #uber
     CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 # 기억
-Show #highEnd
+Hide #highEnd
 	Class == "Memories"
 	BaseType == "Einhar's Memory" "Kirac's Memory" "Niko's Memory" "Alva's Memory"
 	SetFontSize 45
@@ -7506,7 +7506,7 @@ Show #highEnd
 	SetBackgroundColor 40 0 30 255
 	PlayAlertSound 5 300
 	PlayEffect White
-	MinimapIcon 2 White UpsideDownHouse #highEnd
+	#MinimapIcon 2 White UpsideDownHouse #highEnd
 
 # 성역 아이템
 Show 
@@ -7582,7 +7582,7 @@ Show
 # 네크로폴리스에서 제작되는 아이템 보여주기.
 # 매장지의 지역 레벨은 1이다.
 # 킹스마치의 지역 레벨은 1이다.
-Show #end
+Hide #end
 	AreaLevel == 1 
 	Identified True
 	Rarity != Unique
@@ -7592,7 +7592,7 @@ Show #end
     SetBackgroundColor 167 136 0 240 #A78800
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 2 Yellow UpsideDownHouse #end
+	#MinimapIcon 2 Yellow UpsideDownHouse #end
 	CustomAlertSoundOptional "./CustomSound/nice1.wav" 300
 
 Show
