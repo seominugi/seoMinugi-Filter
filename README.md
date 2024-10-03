@@ -46,8 +46,9 @@ CustomSound 폴더를 제외한 filter 파일만 복사하시면 되고,
 - divine1.wav < 디바인 오브 드랍 사운드
 - chaos1.wav < 카오스 오브 드랍 사운드
 - good1.wav < 디바인 단위? 득템 사운드
+- good2.wav < 디바인 단위? 득템 사운드
 - nice1.wav < 카오스 단위? 득템 사운드
-
+  
 <hr/>
 
 
